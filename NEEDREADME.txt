@@ -6,3 +6,4 @@
 //TODO 6.Include bootstrap 4
 //TODO 7.Test every component after it's already finished!
 //TODO 8.Install firebase globally -> npm install -g firebase-tools
+//TODO 9.If you have issues post your issue on github website (this github repo) Issues panel!
