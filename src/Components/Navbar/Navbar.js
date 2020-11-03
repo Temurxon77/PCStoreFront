@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
+import './Navbar.css';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,11 +29,13 @@ const useStyles = makeStyles((theme) => ({
     title: {
       textAlign:'left',
       fontSize:'16px',
+      fontFamily: 'Dancing Script, cursive',
       cursor:"pointer",
       padding:"20px",
       display: 'none',
       [theme.breakpoints.up('sm')]: {
-        display: 'block',
+      display: 'block',
+      
      
       },
     },
@@ -40,10 +44,12 @@ const useStyles = makeStyles((theme) => ({
         textAlign:'right',
         padding:"20px",
         fontSize:'16px',
+        fontFamily: 'Dancing Script, cursive',
         display: 'none',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(60),
           display: 'block',
+        
        
         },
     },
@@ -107,7 +113,8 @@ const Navbar = () => {
               color="inherit"
               aria-label="open drawer"
             >
-             
+            <AppBar
+            title={<img src="https://unsplash.it/40/40"/>}/>
             </IconButton>
             <Typography className={classes.title} variant="h6" noWrap>
              ГЛАВНАЯ
@@ -120,8 +127,7 @@ const Navbar = () => {
             </Typography>
             <Typography className={classes.title} variant="h6" noWrap>
             СОБЕРИ СВОЙ ПК
-            </Typography>
-           
+            </Typography>          
             <Typography className={classes.login} variant="h6" noWrap>
             LOGIN 
             </Typography>

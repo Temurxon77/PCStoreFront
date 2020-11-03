@@ -3,13 +3,15 @@ import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
 
 import './App.css';
+import CarouselExample from './Components/Navbar/Carousel';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
        <Navbar/>
-      </header>
+      {/* </header> */}
+      <CarouselExample/>
     </div>
   );
 }
