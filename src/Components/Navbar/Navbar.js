@@ -14,9 +14,6 @@ const useStyles = makeStyles((theme) => ({
      
     },
     AppBar:{
-       
-   
-       
         //background: `url("http://lorempixel.com/1920/1080/nature") no-repeat center center`,
         backgroundColor:"#2F3133",
         backgroundSize:"cover"
@@ -25,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(20),
     },
     title: {
+      fontFamily:['Dancing Script', 'cursive'],
       textAlign:'left',
       fontSize:'16px',
       cursor:"pointer",
@@ -32,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
       [theme.breakpoints.up('sm')]: {
         display: 'block',
-     
       },
     },
     login:{
