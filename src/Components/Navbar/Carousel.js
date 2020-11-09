@@ -3,19 +3,15 @@ import Carousel from 'react-material-ui-carousel'
 import {Paper} from '@material-ui/core'
 import {Button} from '@material-ui/core'; 
 import logo from "./1.jpeg";
-import logo1 from "./2.jpg";
+import logo1 from "./3.jpg";
 export default function CarouselExample(props)
 {
     var items = [
         {
-       
-          
             imagesrc: logo,
         },
         {
-      
-           
-            imagesrc: logo1,
+           imagesrc: logo1,
         }
     ]
  
@@ -37,8 +33,7 @@ function Item(props)
 {
     return (
         <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
+           
             <img src={props.item.imagesrc} style={{width: '2000px', height: '1000px'}}/>
         
         </Paper>
