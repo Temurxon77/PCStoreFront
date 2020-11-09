@@ -3,14 +3,16 @@ import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
 import Carousel from './Components/Dashboard/Dashboard'
 import './App.css';
-
+import CarouselExample from './Components/Navbar/Carousel';
+import MultipleCarousel from './Components/Navbar/CarouselMultiple';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
        <Navbar/>
-      <Carousel/>
-      </header>
+      {/* </header> */}
+      <CarouselExample/>
+      {/* <MultipleCarousel/> */}
     </div>
   );
 }

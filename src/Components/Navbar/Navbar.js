@@ -5,8 +5,10 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-
-
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import './Navbar.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,32 +24,49 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(20),
     },
     title: {
-      fontFamily:['Dancing Script', 'cursive'],
+      // fontFamily:[	'Racing Sans One'],
       textAlign:'left',
       fontSize:'16px',
+      // fontFamily: 'Dancing Script, cursive',
       cursor:"pointer",
       padding:"20px",
       display: 'none',
       [theme.breakpoints.up('sm')]: {
-        display: 'block',
+      display: 'block',
       },
+    },
+    buttonColor:{
+       fontFamily:['Racing Sans One',' cursive'],
+      textAlign:'left',
+      fontSize:'16px',
+      // fontFamily: 'Dancing Script, cursive',
+      cursor:"pointer",
+      widh:'30px',
+      display: 'none',
+      [theme.breakpoints.up('sm')]: {
+      display: 'block',
+      },
+      color:'white',
     },
     login:{
         cursor:"pointer",
         textAlign:'right',
+        
         padding:"20px",
         fontSize:'16px',
+        fontFamily: 'Dancing Script, cursive',
         display: 'none',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(60),
           display: 'block',
+        
        
         },
     },
     search: {
         
-        fontSize:'16px',
-      position: 'relative',
+      fontSize:'16px',
+      
       borderRadius: theme.shape.borderRadius,
       backgroundColor: fade(theme.palette.common.white, 0.15),
       '&:hover': {
@@ -93,7 +112,36 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
     const classes = useStyles();
-
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl2, setAnchorEl2] = React.useState(null);
+    const [anchorEl3, setAnchorEl3] = React.useState(null);
+    const [anchorEl4, setAnchorEl4] = React.useState(null);
+    
+    const handleClickMainMenu = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleCloseMainMenu = () => {
+      setAnchorEl(null);
+    };  
+    const handleClickAksiya = (event) => {
+      setAnchorEl2(event.currentTarget);
+    };
+    const handleCloseAksiya = () => {
+      setAnchorEl2(null);
+    };
+    const handleClickPayment = (event) => {
+      setAnchorEl3(event.currentTarget);
+    };
+    const handleClosePayment = () => {
+      setAnchorEl3(null);
+    };
+    const handleClickCollectPC = (event) => {
+      setAnchorEl4(event.currentTarget);
+    };
+    const handleCloseCollectPC = () => {
+      setAnchorEl4(null);
+    };
+    
     return (
         <div className={classes.root}>
         <AppBar className={classes.AppBar}>
@@ -104,28 +152,88 @@ const Navbar = () => {
               color="inherit"
               aria-label="open drawer"
             >
-             
+            <AppBar
+            title={<img src="https://unsplash.it/40/40"/>}/>
             </IconButton>
-            <Typography className={classes.title} variant="h6" noWrap>
-             ГЛАВНАЯ
-            </Typography>
-            <Typography className={classes.title} variant="h6" noWrap>
-            АКЦИИ
-            </Typography>
-            <Typography className={classes.title} variant="h6" noWrap>
-              ОПЛАТА И ДОСТАВКА
-            </Typography>
-            <Typography className={classes.title} variant="h6" noWrap>
-            СОБЕРИ СВОЙ ПК
-            </Typography>
-           
-            <Typography className={classes.login} variant="h6" noWrap>
-            LOGIN 
-            </Typography>
-          
-            
-           
-            <div className={classes.search}>
+       <div >
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>
+        
+      ГЛАВНАЯ
+      </Button>
+      
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleCloseMainMenu}
+      >
+        <MenuItem onClick={handleCloseMainMenu}>Profile</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Logout</MenuItem>
+      </Menu>
+      </div>
+      <div >
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>
+        
+      АКЦИИ
+      </Button>
+      
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl2}
+        keepMounted
+        open={Boolean(anchorEl2)}
+        onClose={handleCloseAksiya}
+      >
+        <MenuItem onClick={handleCloseAksiya}>Profile</MenuItem>
+     
+        <MenuItem onClick={handleCloseAksiya}>My account</MenuItem>
+      
+      </Menu>
+      </div>
+       <div >
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>
+        
+      ОПЛАТА И ДОСТАВКА
+      </Button>
+      
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl3}
+        keepMounted
+        open={Boolean(anchorEl3)}
+        onClose={handleClosePayment}
+      >
+        <MenuItem onClick={handleClosePayment}>Profile</MenuItem>
+     
+        <MenuItem onClick={handleClosePayment}>My account</MenuItem>
+      
+      </Menu>
+      </div>
+      <div >
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickCollectPC}>
+        
+      СОБЕРИ СВОЙ ПК
+      </Button>
+      
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl4}
+        keepMounted
+        open={Boolean(anchorEl4)}
+        onClose={handleCloseCollectPC}
+      >
+        <MenuItem onClick={handleCloseCollectPC}>Profile</MenuItem>
+     
+        <MenuItem onClick={handleCloseCollectPC}>My account</MenuItem>
+      
+      </Menu>
+      </div>
+            {/* <div className={classes.search}>
               <div className={classes.searchIcon}>
             
               </div>
@@ -137,7 +245,7 @@ const Navbar = () => {
                 }}
                 inputProps={{ 'aria-label': 'search' }}
               />
-            </div>
+            </div> */}
    
           </Toolbar>
         </AppBar>
