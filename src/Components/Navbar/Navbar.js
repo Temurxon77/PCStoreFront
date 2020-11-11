@@ -15,6 +15,7 @@ import './Navbar.css';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
+      
      
     },
     AppBar:{

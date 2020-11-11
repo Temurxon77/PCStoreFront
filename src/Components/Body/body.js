@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     ]
     
       return (
-        <div ClassName={classes.root}>
-          
+      
+          <div style={{padding: '50px',marginTop:'50px'}}>
      <AnimatedCard
   
     config={{
@@ -65,8 +65,8 @@ const useStyles = makeStyles((theme) => ({
     </div>
 
     </AnimatedCard>
-
-        </div>
+</div>
+    
       )
     };
     
