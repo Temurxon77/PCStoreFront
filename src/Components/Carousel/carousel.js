@@ -1,42 +1,40 @@
 import React from "react";
 
-
+import photo from './1.jpeg';
+import photo1 from '../Images/6010356488.jpg';
+import photo2 from '../Images/123.jpg';
 const MainCarouselPage = () => {
   return (
  
-    <div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: '60px', height: '930px'}}>
    
-      <ol class="carousel-indicators">
-        <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+      <ol className="carousel-indicators">
+        <li data-target="#video-carousel-example" data-slide-to="0"></li>
         <li data-target="#video-carousel-example" data-slide-to="1"></li>
         <li data-target="#video-carousel-example" data-slide-to="2"></li>
       </ol>
     
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <video class="video-fluid" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
-          </video>
+      <div className="carousel-inner" role="listbox" style={{height: '99%'}}>
+        <div className="carousel-item active">
+          
+        <img className="card-img-top" src={photo}/>
+         
         </div>
-        <div class="carousel-item">
-          <video class="video-fluid" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-          </video>
+        <div className="carousel-item">
+        <img className="card-img-top" src={photo1}/>
         </div>
-        <div class="carousel-item">
-          <video class="video-fluid" autoplay loop muted>
-            <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
-          </video>
+        <div className="carousel-item">
+        <img className="card-img-top" src={photo2}/>
         </div>
       </div>
      
-      <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+      <a className="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+      <a className="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
       </a>
   
     </div>
