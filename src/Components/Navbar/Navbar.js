@@ -5,10 +5,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+
+import { MenuItem ,Button,Menu} from '@material-ui/core';
 import './Navbar.css';
+
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,28 +23,34 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize:"cover"
       },
     menuButton: {
-      marginRight: theme.spacing(20),
+      marginRight: theme.spacing(30),
     },
     title: {
       // fontFamily:[	'Racing Sans One'],
       textAlign:'left',
       fontSize:'16px',
-      // fontFamily: 'Dancing Script, cursive',
+     
       cursor:"pointer",
-      padding:"20px",
-      display: 'none',
+      padding:"10px",
+      // display: 'swap',
       [theme.breakpoints.up('sm')]: {
       display: 'block',
       },
     },
     buttonColor:{
-       fontFamily:['Racing Sans One',' cursive'],
+      fontFamily: [
+        'Racing Sans One', 'cursive',
+   
+      ],
+      // fontStyle: 'cursive',
+      fontDisplay: 'swap',
+      fontWeight: 400,
       textAlign:'left',
       fontSize:'16px',
-      // fontFamily: 'Dancing Script, cursive',
-      cursor:"pointer",
-      widh:'30px',
-      display: 'none',
+
+      // cursor:"pointer",
+      // widh:'30px',
+     
       [theme.breakpoints.up('sm')]: {
       display: 'block',
       },
@@ -54,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
         
         padding:"20px",
         fontSize:'16px',
-        fontFamily: 'Dancing Script, cursive',
+        fontFamily: 'Racing+Sans+One',
         display: 'none',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(60),
@@ -177,7 +185,7 @@ const Navbar = () => {
       </Menu>
       </div>
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>
+      <Button className='forExample' style={{color:'white'}} onClick={handleClickAksiya}>
         
       АКЦИИ
       </Button>

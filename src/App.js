@@ -3,16 +3,20 @@ import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
 import Carousel from './Components/Dashboard/Dashboard'
 import './App.css';
-import CarouselExample from './Components/Navbar/Carousel';
-import MultipleCarousel from './Components/Navbar/CarouselMultiple';
+
+import CarouselExampleMultiple from './Components/Navbar/CarouselMultiple';
+import Footer from './Components/Footer/footer';
+
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header"> */}
        <Navbar/>
       {/* </header> */}
-      <CarouselExample/>
-      {/* <MultipleCarousel/> */}
+   
+      {/* <CarouselExampleMultiple/> */}
+      {/* <RecipeReviewCard /> */}
+      <Footer/>
     </div>
   );
 }
