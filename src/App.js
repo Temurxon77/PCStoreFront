@@ -6,17 +6,18 @@ import './App.css';
 
 import Footer from './Components/Footer/footer';
 import Body from './Components/Body/body';
+import CarouselPage from './Components/Carousel/carousel';
 
 function App() {
   return (
     <div className="App">
-
-       <Navbar/>
-    
-      <Body/>
+      {/* <header className="App-header"> */}
+      {/* <Navbar/> */}
+      <CarouselPage/>
+      {/* <Body/>
 
    
-      <Footer/>
+      <Footer/> */}
   
     </div>
   );
