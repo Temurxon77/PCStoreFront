@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import Navbar from './Components/Navbar/Navbar';
-import Carousel from './Components/Dashboard/Dashboard'
+import MainCarouselPage from './Components/Carousel/carousel'
 import './App.css';
-
+import CarouselPage from './Components/Carousel/Minicarusel';
 import Footer from './Components/Footer/footer';
 import Body from './Components/Body/body';
-import CarouselPage from './Components/Carousel/carousel';
+
 
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header"> */}
-      {/* <Navbar/> */}
-      <CarouselPage/>
-      {/* <Body/>
-
-   
-      <Footer/> */}
-  
+      <Navbar/>
+    
+       {/* <Body/> */}
+<MainCarouselPage/>
+       <CarouselPage/>
+      <Footer/> 
+  {/* <MultiCarouselPage/> */}
     </div>
   );
 }
