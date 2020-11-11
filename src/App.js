@@ -6,15 +6,15 @@ import './App.css';
 
 import CarouselExampleMultiple from './Components/Navbar/CarouselMultiple';
 import Footer from './Components/Footer/footer';
-
+import Body from './Components/Body/body'
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header"> */}
        <Navbar/>
       {/* </header> */}
-   
-      {/* <CarouselExampleMultiple/> */}
+      <CarouselExample/>
+      <Body/>
       {/* <RecipeReviewCard /> */}
       <Footer/>
     </div>
