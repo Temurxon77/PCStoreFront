@@ -49,8 +49,7 @@ const useStyles = makeStyles((theme) => ({
     }}
 >
 
-    <div className="card">
-        
+<div className="card">
         <div className="figure">
             <div className="figure_bg"/> 
             <img src={capture}/>
@@ -65,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
         </div>
     </div>
 
-</AnimatedCard>
+    </AnimatedCard>
 
         </div>
       )
