@@ -1,22 +1,11 @@
 import React, {useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import { Divider, ListItem, Typography } from '@material-ui/core';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import BusinessIcon from '@material-ui/icons/Business';
-import clsx from 'clsx';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import ViewListIcon from '@material-ui/icons/ViewList';
-import ContactsIcon from '@material-ui/icons/Contacts';
-import { ClassRounded } from '@material-ui/icons';
 import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 import "@sl-codeblaster/react-3d-animated-card/dist/index.css";
 import './body.css';
 import './index.css';
 import capture from './orig.png';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
     
       return (
         <div ClassName={classes.root}>
-     <AnimatedCard
+            
+     {/* <AnimatedCard
   
     config={{
         rotation: 40, 
@@ -56,27 +46,31 @@ const useStyles = makeStyles((theme) => ({
         }
     }}
     style={{
-        width:560 //container style (you can use className as well)
+        width:560 
     }}
 >
 
-    <div className="card">
+
+
+<div className="card1">
+
         <div className="figure">
-            <div className="figure_bg"/> 
             <img src={capture}/>
         </div>
+    
+
+
         <div className="content">
-            <h2 className="title">Animated Card</h2>
+            <h2 className="title">Ноутбуки</h2>
             <p className={"body"}>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry</p>
         </div>
         <div className="footer">
-            <button className={"footer_btn"}>BUTTON</button>
+            <button className={"footer_btn"}>ПЕРЕЙТИ</button>
         </div>
     </div>
-
-</AnimatedCard>
-        </div>
+    </AnimatedCard> */}
+      </div>
       )
     };
     
