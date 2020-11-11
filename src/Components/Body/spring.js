@@ -1,4 +1,4 @@
-import { render } from 'react-dom'
+
 import React, { useRef } from 'react'
 import clamp from 'lodash-es/clamp'
 import { useSprings, animated } from 'react-spring'
@@ -37,4 +37,3 @@ export default function Viewpager() {
 
 
 
-render(<Viewpager />, document.getElementById('root'))

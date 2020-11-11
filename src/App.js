@@ -11,10 +11,9 @@ import Viewpager from './Components/Body/spring'
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
+
        <Navbar/>
-    
-      <CarouselExample/>
+ 
       <Body/>
       <Viewpager/>
    
