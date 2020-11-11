@@ -15,7 +15,7 @@ function App() {
     
        {/* <Body/> */}
 <MainCarouselPage/>
-       <CarouselPage/>
+       {/* <CarouselPage/> */}
       <Footer/> 
   {/* <MultiCarouselPage/> */}
     </div>
