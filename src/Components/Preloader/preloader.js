@@ -6,7 +6,7 @@ class Preloader extends Component {
 
 
   authenticate(){
-    return new Promise(resolve => setTimeout(resolve, 2000))
+    return new Promise(resolve => setTimeout(resolve))
   }
 
   componentDidMount(){
@@ -17,11 +17,10 @@ class Preloader extends Component {
         ele.classList.add('available')
         setTimeout(() => {
           ele.outerHTML = ''
-        }, 2000)
+        }, 0)
       }
     })
   }
-
   render() {
     return (
       <div className="App">
