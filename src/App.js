@@ -7,15 +7,17 @@ import CarouselPage from './Components/Carousel/Minicarusel';
 import Footer from './Components/Footer/footer';
 import Body from './Components/Body/body';
 
+
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
-      <Navbar/>
     
+      {/* <header className="App-header"> */}
+      {/* <Navbar/> */}
+      
        {/* <Body/> */}
-<MainCarouselPage/>
-       <CarouselPage/>
+      <MainCarouselPage/>
+      <CarouselPage/>
       <Footer/> 
   {/* <MultiCarouselPage/> */}
     </div>

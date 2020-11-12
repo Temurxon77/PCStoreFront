@@ -1,162 +1,112 @@
 import React from "react";
-
+import photo from '../Images/case.png';
+import photo1 from '../Images/monitor.png';
+import photo2 from '../Images/nabor.png';
+import photo3 from '../Images/naushniki.png';
+import photo4 from '../Images/12.png';
+import photo5 from '../Images/chair.png';
+import photo6 from '../Images/laptop.png';
+import photo7 from '../Images/kolonka.png';
+import './minicarousel.css';
 
 const CarouselPage = () => {
   return (
-   
+   <div style={{backgroundColor: 'black', marginTop: '-23px'}}>
     <div className="container my-4">
+    <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel" >   
 
-    <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
-
-    
-      <div className="controls-top">
-        <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
-        <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
-      </div>
-    
-      <ol className="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
-        <li data-target="#multi-item-example" data-slide-to="1"></li>
-        <li data-target="#multi-item-example" data-slide-to="2"></li>
-      </ol>
+      <a className="carousel-control-prev" href="#multi-item-example" role="button" data-slide="prev" style={{width: '50px'}}>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#multi-item-example" role="button" data-slide="next" style={{width: '50px'}}>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
 
       <div className="carousel-inner" role="listbox">
-
-        <div className="carousel-item active">
-
+        <div className="carousel-item active col-lg-12">
           <div className="row">
-            <div className="col-md-4">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3" >
+              <div className="colorcard">
+              <img className="imgg" src={photo}/>
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Кейсы</h4>         
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard" >
+              <img className="imgg" src={photo1}  />
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Мониторы</h4>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard">
+              <img className="imgg" src={photo2}  />
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Игровые наборы</h4>                
+                </div>
+              </div>
+            </div>
+
+             <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard">
+              <img className="imgg" src={photo3}  />
+                <div className="card-body">
+                  <h4 className="card-title-text">Наушники</h4>              
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       
         <div className="carousel-item">
-
           <div className="row">
-            <div className="col-md-4">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3">
+              <div className="colorcard">
+              <img className="imgg" src={photo4}  />
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Комплектующие</h4>              
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard">
+              <img className="imgg" src={photo5}  />
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Игровые кресла</h4>          
                 </div>
               </div>
             </div>
 
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                  alt="Card image cap"/>
+            <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard">
+              <img className="imgg" src={photo6}  />
                 <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
+                  <h4 className="card-title-text">Ноутбуки</h4>              
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-3 clearfix d-none d-md-block">
+              <div className="colorcard">
+              <img className="imgg" src={photo7}  />
+                <div className="card-body">
+                  <h4 className="card-title-text">Колонки</h4>  
                 </div>
               </div>
             </div>
           </div>
-
         </div>
      
 
-        <div className="carousel-item">
-
-          <div className="row">
-            <div className="col-md-4">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                  alt="Card image cap"/>
-                <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                  alt="Card image cap"/>
-                <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 clearfix d-none d-md-block">
-              <div className="card mb-2">
-                <img className="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                  alt="Card image cap"/>
-                <div className="card-body">
-                  <h4 className="card-title">Card title</h4>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a className="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    
        
 
       </div>
@@ -165,7 +115,7 @@ const CarouselPage = () => {
     </div>
     </div>
   
- 
+    </div>
   );
 }
 

@@ -1,0 +1,16 @@
+#myCarousel-indicators li{
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: #8A868E;
+ 
+}
+#myCarousel-indicators .active{
+    background-color: red; 
+}
+/* .carousel-indicators .active{
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+   
+ } */
