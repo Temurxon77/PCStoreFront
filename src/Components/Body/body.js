@@ -4,7 +4,7 @@ import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 import "@sl-codeblaster/react-3d-animated-card/dist/index.css";
 import './body.css';
 import './index.css';
-import capture from './orig.png';
+import capture from '../Images/orig.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,24 +25,24 @@ const useStyles = makeStyles((theme) => ({
     ]
     
       return (
-        <div ClassName={classes.root}>
-            
-     {/* <AnimatedCard
+      
+          <div style={{padding: '50px',marginTop:'50px'}}>
+     <AnimatedCard
   
     config={{
-        rotation: 40, 
+        rotation: 30, 
         transition:{
             duration: 0.5,
             
         },
         transform:{
             figureIcon: {
-                rotation: 25,
-                translateZ: 10
+                rotation: 5,
+                translateZ: 0
             },
-            titleTranslateZ: 140,
-            bodyTextTranslateZ: 100,
-            buttonTranslateZ: 80
+            titleTranslateZ: 10,
+            bodyTextTranslateZ: 10,
+            buttonTranslateZ: 10
         }
     }}
     style={{
@@ -50,10 +50,7 @@ const useStyles = makeStyles((theme) => ({
     }}
 >
 
-
-
-<div className="card1">
-
+<div className="card">
         <div className="figure">
             <img src={capture}/>
         </div>
@@ -69,8 +66,10 @@ const useStyles = makeStyles((theme) => ({
             <button className={"footer_btn"}>ПЕРЕЙТИ</button>
         </div>
     </div>
-    </AnimatedCard> */}
-      </div>
+
+    </AnimatedCard>
+</div>
+    
       )
     };
     
