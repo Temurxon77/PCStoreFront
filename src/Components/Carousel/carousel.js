@@ -6,19 +6,17 @@ import photo2 from '../Images/123.jpg';
 const MainCarouselPage = () => {
   return (
  
-    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel">
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: 0, height: '710px'}}>
    
-      <ol className="carousel-indicators">
-        <li data-target="#video-carousel-example" data-slide-to="0"></li>
+      <ol className="carousel-indicators" id="myCarousel-indicators">
+        <li data-target="#video-carousel-example" data-slide-to="0" className="active" ></li>
         <li data-target="#video-carousel-example" data-slide-to="1"></li>
         <li data-target="#video-carousel-example" data-slide-to="2"></li>
       </ol>
     
-      <div className="carousel-inner" role="listbox">
-        <div className="carousel-item active">
-          
-        <img className="card-img-top" src={photo}/>
-         
+      <div className="carousel-inner" role="listbox" style={{height: '100%'}}>
+        <div className="carousel-item active">         
+        <img className="card-img-top" src={photo}/>       
         </div>
         <div className="carousel-item">
         <img className="card-img-top" src={photo1}/>

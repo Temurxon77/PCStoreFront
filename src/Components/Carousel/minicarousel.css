@@ -1,3 +1,15 @@
-.card-title{
-    color: red;
+.imgg{
+    width: 180px;
+}
+
+.colorcard{
+    background-color: #111111;
+}
+
+.card-title-text{
+    color: white
+}
+
+.carousel-indicators li{
+    border-radius: 500%;
 }
