@@ -7,18 +7,26 @@ import Footer from './Components/Footer/footer';
 import Body from './Components/Body/body';
 import Spring from './Components/Spring/spring';
 // import Preloader from './Components/Preloader/preloader';
-import Preloader from './Components/Spring/spring'
+import Preloader from './Components/Spring/spring';
+import Chernovik from './Components/chernovik/chernovik';
 
 function App() {
   return (
     <div className="App">
 
-      {/* <Navbar/> */}    
+      {/* <Navbar/>     */}
       {/* <Body/> */}
+ 
+            
+    
+      <Chernovik pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      <div id="page-wrap">
 
-      <Preloader/>
+      </div>
       <MainCarouselPage/>
       <CarouselPage/>
+      {/* <Preloader/> */}
+    
       
       {/* <Footer/>  */}
 

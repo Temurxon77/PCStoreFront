@@ -1,5 +1,8 @@
 import React from "react";
 import './carousel.css';
+import { bubble as Menu } from 'react-burger-menu';
+import { Button } from '@material-ui/core';
+import Chernovik from '../chernovik/chernovik';
 import photo from '../Images/1.jpeg';
 import photo1 from '../Images/6010356488.jpg';
 import photo2 from '../Images/123.jpg';
@@ -15,12 +18,17 @@ const MainCarouselPage = () => {
       </ol>
     
       <div className="carousel-inner" role="listbox" style={{height: '100%'}}>
-        <div className="carousel-item active">         
-        <img className="card-img-top" src={photo}/>       
+        <div className="carousel-item active">   
+        <img className="card-img-top"  src={photo}/> 
         </div>
+
         <div className="carousel-item">
         <img className="card-img-top" src={photo1}/>
+        <div className="carousel-caption d-none d-md-block">
+          <h1 style={{color: 'red', marginTop: '200px'}}></h1>
         </div>
+        </div>
+        
         <div className="carousel-item">
         <img className="card-img-top" src={photo2}/>
         </div>
