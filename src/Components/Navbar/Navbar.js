@@ -8,54 +8,84 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import { MenuItem ,Button,Menu} from '@material-ui/core';
 import './Navbar.css';
 import logo from '../Images/1.jpeg';
+import { NoEncryption } from '@material-ui/icons';
 
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      
+      backgroundColor: 'black'
      
     },
     AppBar:{
-        //background: `url("http://lorempixel.com/1920/1080/nature") no-repeat center center`,
+        background: 'black',
         backgroundColor:"black",
         backgroundSize:"cover"
       },
     menuButton: {
-      marginRight: theme.spacing(30),
+      marginRight: theme.spacing(50),
     },
-    title: {
-      // fontFamily:[	'Racing Sans One'],
-      textAlign:'left',
-      fontSize:'16px',
-     
-      cursor:"pointer",
-      padding:"10px",
-      // display: 'swap',
-      [theme.breakpoints.up('sm')]: {
-      display: 'block',
-      },
-    },
-    buttonColor:{
-      fontFamily: [
-        'Racing Sans One', 'cursive',
+    // title: {
+    //   fontFamily:	'Racing Sans One',
+    //   fontStyle: 'cursive',
+    //   textAlign:'left',
+    //   fontSize:'16px',
+    //   color: 'white',
+    //   cursor:"pointer",
+    //   padding:"10px",
+    //   display: 'swap',
+    //   outline: 0,
+    //   border: '5px solid blue !important',
+      
+    // },
+ 
    
-      ],
-      // fontStyle: 'cursive',
-      fontDisplay: 'swap',
-      fontWeight: 400,
-      textAlign:'left',
-      fontSize:'16px',
-
-      // cursor:"pointer",
-      // widh:'30px',
-     
-      [theme.breakpoints.up('sm')]: {
-      display: 'block',
-      },
+    buttonColor:{   
+      fontSize:'17px',
       color:'white',
+      display: 'inline-block',
+      fontFamily: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ],
+      '&:hover': {
+        outline: 'none',
+        background: 'black',
+        color: 'red'
+      },
+      '&:focus': {
+        outline: 'none', 
+      
+      },
+      '&:active': {
+        borderBottom: ['2px solid white'],
+        color: 'red',
+        opacity: 1,
+      },
+      '&:selected': {
+        borderBottom: ['2px solid white'],
+        color: 'red',
+        opacity: 1,
+      },    
+      padding: ['10px 15px'],
+      cursor: 'pointer',
+      background: 'black',
+      border: 0,
+      outline: 0,
+      borderBottom: ['3px solid transparent'], 
+      transition: 'ease border-bottom 250ms',
+      
     },
+    
     login:{
         cursor:"pointer",
         textAlign:'right',
@@ -157,16 +187,16 @@ const Navbar = () => {
             <IconButton
               edge="start"
               className={classes.menuButton}
-              color="inherit"
+              color="white"
               aria-label="open drawer"
             >
+            
+            </IconButton>
             <AppBar
             title={<img src={logo} style={{width: '100px'}}/>}/>
-            </IconButton>
+
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>
-        
-      ГЛАВНАЯ
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>    ГЛАВНАЯ
       </Button>
       
       <Menu
@@ -175,19 +205,22 @@ const Navbar = () => {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleCloseMainMenu}
+        getContentAnchorEl={null}
+        anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+        transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
-        <MenuItem onClick={handleCloseMainMenu}>Profile</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>My account</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Logout</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Laptops</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Motherboards</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Graphic cards</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Gaming</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Sound</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Peripheral</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Data storage</MenuItem>
       </Menu>
       </div>
+
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>
-        
-      АКЦИИ
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>     АКЦИИ
       </Button>
       
       <Menu
@@ -196,17 +229,18 @@ const Navbar = () => {
         keepMounted
         open={Boolean(anchorEl2)}
         onClose={handleCloseAksiya}
+        getContentAnchorEl={null}
+        anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+        transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
-        <MenuItem onClick={handleCloseAksiya}>Profile</MenuItem>
-     
+        <MenuItem onClick={handleCloseAksiya}>Profile</MenuItem>   
         <MenuItem onClick={handleCloseAksiya}>My account</MenuItem>
       
       </Menu>
       </div>
+
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>
-        
-      ОПЛАТА И ДОСТАВКА
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>     ОПЛАТА И ДОСТАВКА
       </Button>
       
       <Menu
@@ -215,6 +249,9 @@ const Navbar = () => {
         keepMounted
         open={Boolean(anchorEl3)}
         onClose={handleClosePayment}
+        getContentAnchorEl={null}
+        anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+        transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
         <MenuItem onClick={handleClosePayment}>Profile</MenuItem>
      
@@ -234,6 +271,9 @@ const Navbar = () => {
         keepMounted
         open={Boolean(anchorEl4)}
         onClose={handleCloseCollectPC}
+        getContentAnchorEl={null}
+        anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
+        transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
         <MenuItem onClick={handleCloseCollectPC}>Profile</MenuItem>
      

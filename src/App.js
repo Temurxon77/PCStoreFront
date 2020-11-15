@@ -13,21 +13,13 @@ import Chernovik from './Components/chernovik/chernovik';
 function App() {
   return (
     <div className="App">
-
-      {/* <Navbar/>     */}
+      <Chernovik />
+      <Navbar/>    
       {/* <Body/> */}
- 
-            
-    
-      <Chernovik pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-      <div id="page-wrap">
-
-      </div>
+     
       <MainCarouselPage/>
       <CarouselPage/>
-      {/* <Preloader/> */}
-    
-      
+      {/* <Preloader/> */}   
       {/* <Footer/>  */}
 
     </div>

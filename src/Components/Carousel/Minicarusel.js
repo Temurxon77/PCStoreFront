@@ -105,10 +105,6 @@ const CarouselPage = () => {
           </div>
         </div>
      
-
-    
-       
-
       </div>
      
 
