@@ -7,7 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { MenuItem ,Button,Menu} from '@material-ui/core';
 import './Navbar.css';
-import logo from '../Images/1.jpeg';
+
 import { NoEncryption } from '@material-ui/icons';
 
 
@@ -192,8 +192,8 @@ const Navbar = () => {
             >
             
             </IconButton>
-            <AppBar
-            title={<img src={logo} style={{width: '100px'}}/>}/>
+            
+            
 
        <div >
       <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>    ГЛАВНАЯ

@@ -1,16 +1,68 @@
-#myCarousel-indicators li{
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    background-color: #8A868E;
- 
-}
-#myCarousel-indicators .active{
-    background-color: red; 
-}
-/* .carousel-indicators .active{
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-   
- } */
+#myCarousel-indicators {
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:20px;
+    right:10px; left:95%;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+#myCarousel-indicators li{   
+    background-color:  #8A868E; 
+    width: 15px;
+    height: 15px;
+  }
+
+#myCarousel-indicators .active {
+    margin-bottom:5px; 
+    background-color:red;
+  }
+
+  h1 {
+    font-size: 150px;
+    color: white;
+    transform: translateY(-1000px);
+    animation: 2s slideIn ease-in-out forwards 1.5s;
+    z-index: 10;
+    opacity: 0;
+    
+    left: 10px;
+  }
+  
+  h1::before {
+      content: '';
+      width: 0%;
+      height: 10px;
+      background-color: var(--secondary-color);
+      position: absolute;
+      bottom: 0;
+      animation: 1s underline ease-in-out forwards 2s;
+      mix-blend-mode: screen;
+  }
+
+  @keyframes skewBg {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes underline {
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }

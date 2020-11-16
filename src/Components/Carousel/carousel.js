@@ -3,13 +3,13 @@ import './carousel.css';
 import { bubble as Menu } from 'react-burger-menu';
 import { Button } from '@material-ui/core';
 import Chernovik from '../chernovik/chernovik';
-import photo from '../Images/1.jpeg';
-import photo1 from '../Images/6010356488.jpg';
-import photo2 from '../Images/123.jpg';
+import photo from '../Images/1slide.jpg';
+import photo1 from '../Images/2slide.jpg';
+import photo2 from '../Images/3slide.jpg';
 const MainCarouselPage = () => {
   return (
  
-    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: 0, height: '710px'}}>
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: -10, height: '1000px'}}>
    
       <ol className="carousel-indicators" id="myCarousel-indicators">
         <li data-target="#video-carousel-example" data-slide-to="0" className="active" ></li>
@@ -17,17 +17,18 @@ const MainCarouselPage = () => {
         <li data-target="#video-carousel-example" data-slide-to="2"></li>
       </ol>
     
-      <div className="carousel-inner" role="listbox" style={{height: '100%'}}>
-        <div className="carousel-item active">   
+      <div className="carousel-inner" role="listbox">
+      <h1>GIGABYTE</h1>  
+        <div className="carousel-item active"> 
+        
         <img className="card-img-top"  src={photo}/> 
+        
         </div>
 
         <div className="carousel-item">
-        <img className="card-img-top" src={photo1}/>
-        <div className="carousel-caption d-none d-md-block">
-          <h1 style={{color: 'red', marginTop: '200px'}}></h1>
+        <img className="card-img-top" src={photo1}/> 
         </div>
-        </div>
+        
         
         <div className="carousel-item">
         <img className="card-img-top" src={photo2}/>
