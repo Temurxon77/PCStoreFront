@@ -17,23 +17,21 @@ const MainCarouselPage = () => {
         <li data-target="#video-carousel-example" data-slide-to="2"></li>
       </ol>
     
-      <div className="carousel-inner" role="listbox">
-      <h1>GIGABYTE</h1>  
-        <div className="carousel-item active"> 
-        
-        <img className="card-img-top"  src={photo}/> 
-        
-        </div>
-
-        <div className="carousel-item">
-        <img className="card-img-top" src={photo1}/> 
-        </div>
-        
-        
-        <div className="carousel-item">
-        <img className="card-img-top" src={photo2}/>
-        </div>
+    <div className="carousel-inner" role="listbox">
+        <h1>GIGABYTE</h1>  
+      <div className="carousel-item active">      
+        <img className="card-img-top"  src={photo}/>       
       </div>
+
+      <div className="carousel-item">
+        <img className="card-img-top" src={photo1}/> 
+      </div>
+        
+        
+      <div className="carousel-item">
+        <img className="card-img-top" src={photo2}/>
+      </div>
+    </div>
      
       <a className="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>

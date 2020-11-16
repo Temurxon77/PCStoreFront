@@ -196,7 +196,7 @@ const Navbar = () => {
             
 
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>    ГЛАВНАЯ
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>Laptops
       </Button>
       
       <Menu
@@ -209,18 +209,19 @@ const Navbar = () => {
         anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
         transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
-        <MenuItem onClick={handleCloseMainMenu}>Laptops</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Motherboards</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Graphic cards</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Gaming</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Sound</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Peripheral</MenuItem>
-        <MenuItem onClick={handleCloseMainMenu}>Data storage</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>All Laptops</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Acer</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Lenovo</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Asus</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Dell</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Fujitsu</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>HP</MenuItem>
+        <MenuItem onClick={handleCloseMainMenu}>Toshiba</MenuItem>
       </Menu>
       </div>
 
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>     АКЦИИ
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>Desktops
       </Button>
       
       <Menu
@@ -240,7 +241,7 @@ const Navbar = () => {
       </div>
 
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>     ОПЛАТА И ДОСТАВКА
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>Monitors
       </Button>
       
       <Menu
@@ -260,9 +261,7 @@ const Navbar = () => {
       </Menu>
       </div>
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickCollectPC}>
-        
-      СОБЕРИ СВОЙ ПК
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickCollectPC}>СОБЕРИ СВОЙ ПК
       </Button>
       
       <Menu
