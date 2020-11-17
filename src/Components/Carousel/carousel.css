@@ -1,41 +1,84 @@
-#myCarousel-indicators{
-    /* border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    background-color: #8A868E;
-  */
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    position:absolute;
+#myCarousel-indicators {
     top:0;
     bottom:0;
     margin:auto;
-    height:0px;
-    right: 50px; left:auto;
+    height:20px;
+    right:10px; left:95%;
     width:auto;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-    
-}
-#myCarousel-indicators li.active{
-    background-color: red; 
-}
-#myCarousel-indicators li{
-   
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    
-    margin-left: 40px;
+  }
 
-}
-/* .carousel-indicators .active{
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-   
- } */
+#myCarousel-indicators li{   
+    background-color:  #8A868E; 
+    width: 15px;
+    height: 15px;
+  }
+
+#myCarousel-indicators .active {
+    margin-bottom:5px; 
+    background-color:red;
+  }
+
+  .centered {
+    font-size: 150px;
+    color: white;
+    transform: translateY(-500px);
+    /* transform: translateX(-50%); */
+    animation: 2s slideIn ease-in-out forwards 1.5s;
+    z-index: 10;
+    opacity: 0;
+    left: 10px;
+    
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+  }
+  /* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:
+    color: white;
+    transform: translate(-50%, -50%);
+  } */
+  
+  .centered::before {
+      content: '';
+      width: 0%;
+      height: 10px;
+      background-color: var(--secondary-color);
+      position: absolute;
+      bottom: 0;
+      animation: 1s underline ease-in-out forwards 2s;
+      mix-blend-mode: screen;
+  }
+
+  @keyframes skewBg {
+    0% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes underline {
+    100% {
+      width: 100%;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
