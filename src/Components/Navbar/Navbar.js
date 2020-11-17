@@ -7,9 +7,10 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { MenuItem ,Button,Menu} from '@material-ui/core';
 import './Navbar.css';
-
-import { NoEncryption } from '@material-ui/icons';
-
+import LaptopIcon from '@material-ui/icons/Laptop';
+import DesktopMacIcon from '@material-ui/icons/DesktopMac';
+import PersonalVideoIcon from '@material-ui/icons/PersonalVideo';
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -196,7 +197,7 @@ const Navbar = () => {
             
 
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}>Laptops
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}><LaptopIcon/>  Laptops
       </Button>
       
       <Menu
@@ -221,7 +222,7 @@ const Navbar = () => {
       </div>
 
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>Desktops
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}><DesktopMacIcon/>  Desktops
       </Button>
       
       <Menu
@@ -234,14 +235,17 @@ const Navbar = () => {
         anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
         transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
-        <MenuItem onClick={handleCloseAksiya}>Profile</MenuItem>   
-        <MenuItem onClick={handleCloseAksiya}>My account</MenuItem>
-      
+        <MenuItem onClick={handleCloseAksiya}>All Desktops</MenuItem>
+        <MenuItem onClick={handleCloseAksiya}>Cases</MenuItem>   
+        <MenuItem onClick={handleCloseAksiya}>Graphic cards</MenuItem>
+        <MenuItem onClick={handleCloseAksiya}>Mother boards</MenuItem>
+        <MenuItem onClick={handleCloseAksiya}>Power Supply</MenuItem>
+        <MenuItem onClick={handleCloseAksiya}>Processors</MenuItem>
       </Menu>
       </div>
 
        <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}>Monitors
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickPayment}><PersonalVideoIcon/>    Monitors
       </Button>
       
       <Menu
@@ -254,14 +258,15 @@ const Navbar = () => {
         anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}
         transformOrigin={{vertical: 'top', horizontal: 'center'}}
       >
+        <MenuItem onClick={handleClosePayment}>Benq</MenuItem>
+        <MenuItem onClick={handleClosePayment}>Viewsonic</MenuItem>
+        <MenuItem onClick={handleClosePayment}>Dell</MenuItem>
         <MenuItem onClick={handleClosePayment}>Profile</MenuItem>
-     
-        <MenuItem onClick={handleClosePayment}>My account</MenuItem>
       
       </Menu>
       </div>
       <div >
-      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickCollectPC}>СОБЕРИ СВОЙ ПК
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickCollectPC}><ImportantDevicesIcon/>    Collect your pc
       </Button>
       
       <Menu

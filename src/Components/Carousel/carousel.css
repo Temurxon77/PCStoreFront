@@ -22,63 +22,90 @@
     margin-bottom:5px; 
     background-color:red;
   }
-
-  .centered {
-    font-size: 150px;
-    color: white;
-    transform: translateY(-500px);
-    /* transform: translateX(-50%); */
-    animation: 2s slideIn ease-in-out forwards 1.5s;
-    z-index: 10;
-    opacity: 0;
-    left: 10px;
+  @keyframes movingTopToBottom {
+    from {top: 0px;}
+    to {top: 300px;}
+  }
+  @keyframes movingLeftToRight {
     
-  }
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-
-  }
-  /* .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size:
-    color: white;
-    transform: translate(-50%, -50%);
-  } */
-  
-  .centered::before {
-      content: '';
-      width: 0%;
-      height: 10px;
-      background-color: var(--secondary-color);
-      position: absolute;
-      bottom: 0;
-      animation: 1s underline ease-in-out forwards 2s;
-      mix-blend-mode: screen;
-  }
-
-  @keyframes skewBg {
     0% {
-      transform: scale(1.5);
+      
+      left: 0px;
+    
+    }
+    33% {
+      left: 100px;
+    }
+    66% {
+      left: 200px;
     }
     100% {
-      transform: scale(1);
+      left: 300px;
     }
   }
-  
-  @keyframes underline {
-    100% {
-      width: 100%;
-      transform: translateY(0px);
-    }
+  #promoHeader { 
+    height: 65px;
+    width: 450px;
+    color: white;
+    margin-left: 15.6%;
+    animation: movingTopToBottom .5s linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  #promoTitle{
+    width: 400px;
+    bottom: 740px;
+    color: white;
+    animation: movingLeftToRight 0.5s linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    position: relative;
+ 
+
+
+  }
+
+
+  .header1{
+    
+    color: #2BC500 !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
   }
   
-  @keyframes slideIn {
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
+  h5{
+    color: white !important;
+    font-family:  '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',;
+    text-align: left;
+  }
+
+  .header2{
+    color: #FF001D !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
+  }
+
+  .title2{
+    color: white !important;
+    font-family:  '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',;
+    text-align: left;
   }
