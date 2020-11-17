@@ -34,24 +34,24 @@ Note: Beware of modifying this element as it can break the animations - you shou
 */
 .bm-menu-wrap {
   position: fixed;
-  height: 100%;
+  
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: black;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: black;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: white;
   padding: 0.8em;
 }
 
@@ -62,16 +62,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 .bm-item {
   display: inline-block;
-
-  color: #d1d1d1;
-  margin-bottom: 10px;
+  outline: none;
+  color: white;
+  margin-top: 40px;
   text-align: left;
+  margin-left: 40%;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .bm-item:hover {
-  color: #ffffff;
+  color: red;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.2s;
+}.bm-item:active{
+  color: red;
 }
 /* Styling of overlay */
 .bm-overlay {

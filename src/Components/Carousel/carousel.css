@@ -1,12 +1,37 @@
-#myCarousel-indicators li{
-    border-radius: 100%;
+#myCarousel-indicators{
+    /* border-radius: 100%;
     width: 12px;
     height: 12px;
     background-color: #8A868E;
- 
+  */
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:0px;
+    right: 50px; left:auto;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
 }
-#myCarousel-indicators .active{
+#myCarousel-indicators li.active{
     background-color: red; 
+}
+#myCarousel-indicators li{
+   
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    
+    margin-left: 40px;
+
 }
 /* .carousel-indicators .active{
     border-radius: 100%;
