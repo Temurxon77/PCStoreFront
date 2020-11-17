@@ -28,10 +28,8 @@
   }
   @keyframes movingLeftToRight {
     
-    0% {
-      
-      left: 0px;
-    
+    0% {   
+      left: -999999px; 
     }
     33% {
       left: 100px;
@@ -43,6 +41,7 @@
       left: 300px;
     }
   }
+
   #promoHeader { 
     height: 65px;
     width: 450px;
@@ -58,23 +57,19 @@
     bottom: 740px;
     color: white;
     animation: movingLeftToRight 0.5s linear;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    /* animation-direction: normal; */
+    animation-fill-mode: both;
     position: relative;
- 
-
-
+    animation-delay: .5s;
   }
 
-
   .header1{
-    
     color: #2BC500 !important;
     font-family: Luminari, fantasy, bold !important;
     text-align: left;
   }
   
-  h5{
+  .title1{
     color: white !important;
     font-family:  '-apple-system',
     'BlinkMacSystemFont',
@@ -96,6 +91,26 @@
   }
 
   .title2{
+    color: white !important;
+    font-family:  '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',;
+    text-align: left;
+  }
+  .header3{
+    color: #00A5FF !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
+  }
+
+  .title3{
     color: white !important;
     font-family:  '-apple-system',
     'BlinkMacSystemFont',

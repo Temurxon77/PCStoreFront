@@ -15,10 +15,11 @@ function App() {
     <div className="App">
    
       <Navbar/>    
-      {/* <Body/> */}
-        {/* <Chernovik /> */}
+ 
+      {/* <Chernovik /> */}
       <MainCarouselPage/>
-      {/* <CarouselPage/> */}
+      <CarouselPage/>
+      {/* <Body/> */}
       {/* <Preloader/> */}   
       {/* <Footer/>  */}
 
