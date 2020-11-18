@@ -7,26 +7,45 @@ import './minicarousel.css';
 
 const CarouselPage = () => {
   return (
-  <div style={{backgroundColor: 'black'}}>  
-    <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel" >   
-      <div className="minicarousel" style={{width: '100%', marginTop: '1px'}}>
+  
+      
+     
           <div className="row" style={{marginRight: 0}}>
             <div className="block">
               <img className="imgg" src={photo}/>
+              
+                <div class="thumb-anim">
+            
+                  <h5 class="thumb-title">headphones</h5>
+                  <p class="thumb-description">
+                    jkjdsfk
+                  </p>
+                </div>
             </div>  
             
             <div className="block">
               <img className="imgg" src={photo1}  />
+              <div class="thumb-anim">
+              <h5 class="thumb-title">CHAIRS</h5>
+                  <p class="thumb-description">
+                    sdfsd
+                  </p>
+                </div>
             </div>   
 
             <div className="block">
               <img className="imgg" src={photo2}  />
+              <div class="thumb-anim">
+              <h5 class="thumb-title">gaming set</h5>
+                  <p class="thumb-description">fsdfs
+                  </p>
+                </div>
             </div> 
 
           </div>
-      </div>
-    </div>
-  </div>
+  
+
+ 
   );
 }
 
