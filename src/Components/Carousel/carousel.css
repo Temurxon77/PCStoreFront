@@ -75,16 +75,7 @@
   
   .title1{
     color: white !important;
-    font-family:  '-apple-system',
-    'BlinkMacSystemFont',
-    '"Segoe UI"',
-    'Roboto',
-    '"Helvetica Neue"',
-    'Arial',
-    'sans-serif',
-    '"Apple Color Emoji"',
-    '"Segoe UI Emoji"',
-    '"Segoe UI Symbol"',;
+    font-family: 'Ibarra Real Nova', serif;
     text-align: left;
   }
 
@@ -96,16 +87,7 @@
 
   .title2{
     color: white !important;
-    font-family:  '-apple-system',
-    'BlinkMacSystemFont',
-    '"Segoe UI"',
-    'Roboto',
-    '"Helvetica Neue"',
-    'Arial',
-    'sans-serif',
-    '"Apple Color Emoji"',
-    '"Segoe UI Emoji"',
-    '"Segoe UI Symbol"',;
+    font-family: 'Ibarra Real Nova', serif;
     text-align: left;
   }
   .header3{
@@ -116,20 +98,11 @@
 
   .title3{
     color: white !important;
-    font-family:  '-apple-system',
-    'BlinkMacSystemFont',
-    '"Segoe UI"',
-    'Roboto',
-    '"Helvetica Neue"',
-    'Arial',
-    'sans-serif',
-    '"Apple Color Emoji"',
-    '"Segoe UI Emoji"',
-    '"Segoe UI Symbol"',;
+    font-family: 'Ibarra Real Nova', serif;
     text-align: left;
   }
 
-  .carousel-control-next{
+  /* .carousel-control-next{
     left: 50px;
     bottom: 50px;
     width: 1px;
@@ -139,4 +112,4 @@
   .carousel-control-prev{
     left: 50px;
     bottom: 50px;
-  }
+  } */
