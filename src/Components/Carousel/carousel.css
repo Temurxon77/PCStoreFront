@@ -124,3 +124,15 @@
     '"Segoe UI Symbol"',;
     text-align: left;
   }
+
+  .carousel-control-next{
+    left: 50px;
+    bottom: 50px;
+    width: 1px;
+    border: 1px solid white;
+  }
+
+  .carousel-control-prev{
+    left: 50px;
+    bottom: 50px;
+  }
