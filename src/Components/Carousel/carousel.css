@@ -42,6 +42,8 @@
     }
   }
 
+
+
   #promoHeader { 
     height: 65px;
     width: 450px;
@@ -62,6 +64,8 @@
     position: relative;
     animation-delay: .5s;
   }
+
+
 
   .header1{
     color: #2BC500 !important;

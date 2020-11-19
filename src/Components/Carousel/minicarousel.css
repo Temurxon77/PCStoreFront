@@ -1,15 +1,59 @@
 .imgg{
-    width: 638px;
+    width: 638.3px;
     height: 270px;
+    position: absolute;
+    left: 0;   
 }
 
 .block{
     
     border-color: white;
-    border: 0.1px solid white;
-    border-right: none;
-    border-top: none;
+    border: .1px solid white;
+    border-right: 0;
+    position: relative;
+    
+    
 }
 
+
+
+
+.thumb-anim {
+    
+    position: relative;
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+.thumb-title {
+    font-size: 35px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform: translateY(-100%);
+    color:#fff001;
+    margin-top: 80px;
+
+}
+
+.thumb-description {
+    text-transform: uppercase;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: large;
+    width: 638.3px;
+    color: white;
+}
+
+.block:hover .thumb-anim {
+    transform: translateY(0);
+}
+  
+.block:hover .thumb-title {
+    transform: translateY(0%);
+}
+  
+.block:hover .thumb-description {
+    opacity: 1;
+  }
 
 
