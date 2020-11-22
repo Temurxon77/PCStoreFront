@@ -1,6 +1,6 @@
 .imgg{
     width: 638.3px;
-    height: 270px;
+    height: 220px;
     position: absolute;
     left: 0;   
 }
@@ -31,7 +31,7 @@
     transition: 0.5s;
     transform: translateY(-100%);
     color:#fff001;
-    margin-top: 80px;
+    margin-top: 25px;
     width: 638.3px;
     font-family:  '-apple-system',
     'BlinkMacSystemFont',

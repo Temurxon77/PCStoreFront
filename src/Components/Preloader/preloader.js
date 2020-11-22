@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-import video from '../Images/IntroVideo.mp4'
+import './preloader.css'
+import video from './IntroVideo.mp4'
 
 class Preloader extends Component {
 
@@ -25,7 +25,7 @@ class Preloader extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        <video className='videoTag' autoPlay loop muted>
+        <video className='videoTag' autoPlay loop>
             <source src={video} type='video/mp4' />
         </video>
          

@@ -194,7 +194,7 @@ const Navbar = () => {
             
             </IconButton>
             
-            
+
 
        <div >
       <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickMainMenu}><LaptopIcon/>  Laptops
