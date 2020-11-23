@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 import "@sl-codeblaster/react-3d-animated-card/dist/index.css";
 import './body.css';
-import './index.css';
+
 import capture from '../Images/orig.png';
 
 
