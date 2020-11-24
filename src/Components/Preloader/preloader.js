@@ -1,5 +1,6 @@
+
 import './preloader.css'
-import video from '../Images/IntroVideo.mp4'
+import video from './IntroVideo.mp4'
 
 import React, { useRef, useState, Fragment, Component } from 'react'
 

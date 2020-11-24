@@ -1,115 +1,456 @@
 #myCarousel-indicators {
-    top:0;
-    bottom:0;
-    margin:auto;
-    height:20px;
-    right:10px; left:95%;
-    width:auto;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:0px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 
 #myCarousel-indicators li{   
-    background-color:  #8A868E; 
-    width: 15px;
-    height: 15px;
-  }
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+}
 
 #myCarousel-indicators .active {
-    margin-bottom:5px; 
-    background-color:red;
+  margin-bottom:5px; 
+  background-color:red;
+}
+@keyframes movingTopToBottom {
+  from {top: 0px;}
+  to {top: 100px;}
+}
+@keyframes movingLeftToRight {
+  
+  0% {   
+    left: -999999px; 
   }
-  @keyframes movingTopToBottom {
-    from {top: 0px;}
-    to {top: 300px;}
+  33% {
+    left: 10px;
   }
-  @keyframes movingLeftToRight {
-    
-    0% {   
-      left: -999999px; 
-    }
-    33% {
-      left: 100px;
-    }
-    66% {
-      left: 200px;
-    }
-    100% {
-      left: 300px;
-    }
+  66% {
+    left: 80px;
   }
-
-
-
-  #promoHeader { 
-    height: 65px;
-    width: 450px;
-    color: white;
-    margin-left: 15.6%;
-    animation: movingTopToBottom .5s linear;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    position: relative;
+  100% {
+    left: 130px;
   }
-  #promoTitle{
-    width: 400px;
-    bottom: 740px;
-    color: white;
-    animation: movingLeftToRight 0.5s linear;
-    /* animation-direction: normal; */
-    animation-fill-mode: both;
-    position: relative;
-    animation-delay: .5s;
+}
+
+  
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color:white;
+  width: 450px;
+  margin-left: 15.6%;
+  animation: movingTopToBottom .5s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
   }
-
-
-
-  .header1{
+  .top-left h1{
     color: #2BC500 !important;
     font-family: Luminari, fantasy, bold !important;
     text-align: left;
   }
+
+.promoTitle{
+  width: 400px;
+  margin-top: 0;
+  color: white;
+  animation: movingLeftToRight 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  position: relative;
+  animation-delay: .5s;
+}
+.promoTitle h5{
+  color: white !important;
+  font-family: 'Ibarra Real Nova', serif;
+  text-align: left;
+  margin-top: 0;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1200px){
+  .top-left h1{
+    display: none;
+  }
+  .top-left {
+    display: none;
+    }
+  .promoTitle{
+      display: none;
+    }
+  .promoTitle h5{
+      display:none;
+    }
   
-  .title1{
-    color: white !important;
-    font-family: 'Ibarra Real Nova', serif;
-    text-align: left;
+  
+}
+@media only screen and (min-width: 1201px) and (max-width: 2100px){
+ 
+  .top-left {
+    position: absolute;
+ 
+    top: 8px;
+    left: 16px;
+    color:white;
+    width: 450px;
+    margin-left: 15.6%;
+    animation: movingTopToBottom .5s linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    }
+    .top-left h1{
+      margin-top:-100px;
+      color: #2BC500 !important;
+      font-family: Luminari, fantasy, bold !important;
+      text-align: left;
+      font-size:17px;
+    }
+   
+    .promoTitle{
+      position: absolute;
+      width: 400px;
+      bottom: 400px;
+      animation: movingLeftToRight 0.5s linear;
+      animation-delay: .5s;
+      color: white;
+      /* animation-direction: normal; */
+      animation-fill-mode: both;
+      left: 0;
+    }
+    .promoTitle h5{
+    
+      color: white !important;
+      font-family: 'Ibarra Real Nova', serif;
+      /* text-align: left; */
+      font-size:15px;
+      /* margin-right: 200px; */
+    }
+    @keyframes movingLeftToRight {
+  
+      0% {   
+        left: -999999px; 
+      }
+      33% {
+        left: 0;
+      }
+      66% {
+        left: 0px;
+      }
+      100% {
+        left: 0px;
+      }
+    }
+    @keyframes movingTopToBottom {
+      from {top: 0%;}
+      to {top: 20%;}
+    }
+   
+   
+  
+   .mainbutton{
+    position: relative;
+    bottom: 25%;
+    color: rgb(235, 233, 233) !important;
+    animation: movingUpBottom 0.5s linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+    right:28%;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+}
+   @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 340px;
+    }
   }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1300px){
+  .promoTitle{
+    bottom: 380px;
+  }
+}
+@media only screen and (min-width: 1301px) and (max-width: 1350px){
+  .promoTitle{
+    bottom: 420px;
+  }
+  @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 410px;
+    }
+  }
+}
+@media only screen and (min-width: 1351px) and (max-width: 1450px){
+  .promoTitle{
+    bottom: 450px;
+  }
+  .mainbutton{
+    animation: movingUpBottom 0.5s linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+   }
+   @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 440px;
+    }
+  }
+  
+}
+@media only screen and (min-width: 1451px) and (max-width: 1550px){
+  .promoTitle{
+    bottom: 500px;
+  }
+  .top-left h1{
+    font-size:27px;
+  }
+  .mainbutton{
+    animation: movingUpBottom 0.5s linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+    font-size: 24px;
+    padding: 25px 32px;
+    margin: 33px 25px;
+   }
+   .promoTitle h5{
+    font-size:18px;
+  }
+   @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 500px;
+    }
+  }
+  
+}
+@media only screen and (min-width: 1551px) and (max-width: 1600px){
+  .top-left h1{
+    font-size:28px;
+    margin-right:20px;
+  }
+  .promoTitle{
+    bottom: 530px;
+  }
+  .promoTitle h5{
+    font-size:18px;
+  }
+  @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 530px;
+    }
+  }
+}
 
-  .header2{
-    color: #FF001D !important;
-    font-family: Luminari, fantasy, bold !important;
-    text-align: left;
+@media only screen and (min-width: 1601px) and (max-width: 1701px){
+  .top-left h1{
+    font-size:28px;
+    margin-right:20px;
   }
+  .promoTitle{
+    bottom: 550px;
+  }
+  .promoTitle h5{
+    font-size:18px;
+    
+  }
+  .mainbutton{
+    animation: movingUpBottom 0.5s linear;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+    font-size: 24px;
+    color: rgb(235, 233, 233) !important;
+    position: relative;
 
-  .title2{
-    color: white !important;
-    font-family: 'Ibarra Real Nova', serif;
-    text-align: left;
+   }
+  @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 100px;
+    }
+    100% {
+      bottom: 30px;
+    }
   }
-  .header3{
-    color: #00A5FF !important;
-    font-family: Luminari, fantasy, bold !important;
-    text-align: left;
+  @keyframes movingLeftToRight {
+  
+    0% {   
+      margin-left: -999999px; 
+    }
+    33% {
+      margin-left: 4%;
+    }
+    66% {
+      margin-left: 7%;
+    }
+    100% {
+      margin-left: 14%;
+    }
   }
+}
+@media only screen and (min-width: 1702px) and (max-width: 1801px){
+  .promoTitle{
+    bottom: 600px;
+  }
+  .top-left h1{
+    font-size:26px;
+    
+  }
+  .promoTitle h5{
+    font-size:18px;
+    
+  }
+  @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 580px;
+    }
+  }
+}
+@media only screen and (min-width: 1802px) and (max-width: 1901px){
+  .promoTitle{
+    bottom: 600px;
+  }
+  .top-left h1{
+    font-size:26px;
+    
+  }
+  .promoTitle h5{
+    font-size:18px;
+    
+  }
+  @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 580px;
+    }
+  }
+}
+@media only screen and (min-width: 1902px) and (max-width: 2201px){
+  .top-left h1{
+    font-size:28px;
 
-  .title3{
-    color: white !important;
-    font-family: 'Ibarra Real Nova', serif;
-    text-align: left;
   }
-
-  /* .carousel-control-next{
-    left: 50px;
-    bottom: 50px;
-    width: 1px;
-    border: 1px solid white;
+  .promoTitle{
+    bottom: 800px;
   }
+  .promoTitle h5{
+    font-size:20px;
+    
+  }
+.mainbutton{
+  animation: movingUpBottom 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-delay: .5s;
+  font-size: 24px;
+  color: rgb(235, 233, 233) !important;
+  position: relative;
+  right:28%;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8) !important;
+  color: #f0eaea!important;
+}
+@keyframes movingUpBottom {
 
-  .carousel-control-prev{
-    left: 50px;
-    bottom: 50px;
-  } */
+  0% {   
+    bottom: -100%; 
+  }
+  33% {
+    bottom: 40px;
+  }
+  66% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 780px;
+  }
+}
+}

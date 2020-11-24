@@ -1,6 +1,42 @@
-#simple-menu{
-    
-    /* margin-top: 48px;
-    width: auto; */
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+    padding: 0 !important;
+
    
+  }
+  .dropdown-submenu {
+    position:relative;
+    padding: 0;
+  
+  }
+  .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    
+  }
+  
+  /* rotate caret on hover */
+  .dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+    
+  } 
+
+#items a{
+    font-size: 17px;
+    font-family:  'Teko', sans-serif;
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    text-shadow: tomato;
 }
+/* #items:active{
+    color: red !important;
+    border-bottom: 1px solid white;
+   
+} */
+
+
+
