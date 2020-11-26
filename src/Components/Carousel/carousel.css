@@ -2,7 +2,7 @@
   top:0;
   bottom:0;
   margin:auto;
-  height:0px;
+  height:100px;
   right:10px; left:95%;
   width:auto;
   -webkit-transform: rotate(90deg);
@@ -35,34 +35,32 @@
     left: 10px;
   }
   66% {
-    left: 80px;
+    left: 50px;
   }
   100% {
-    left: 130px;
+    left: 100px;
   }
 }
 
   
 .top-left {
   position: absolute;
-  top: 8px;
-  left: 16px;
-  color:white;
-  width: 450px;
-  margin-left: 15.6%;
-  animation: movingTopToBottom .5s linear;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  }
+  left: 0px !important;
+  animation: movingTopToBottom 0.5s linear;
+}
+
   .top-left h1{
-    color: #2BC500 !important;
+    color: #EB4C42 !important;
     font-family: Luminari, fantasy, bold !important;
     text-align: left;
+    font-size: 70px !important;
+    width: 700px;
+    text-transform: uppercase;
   }
 
 .promoTitle{
   width: 400px;
-  margin-top: 0;
+  top: 300px;
   color: white;
   animation: movingLeftToRight 0.5s linear;
   animation-direction: normal;
@@ -72,11 +70,14 @@
 }
 .promoTitle h5{
   color: white !important;
-  font-family: 'Ibarra Real Nova', serif;
+  font-family:  'Teko', sans-serif !important;
+  font-size: 25px !important;
   text-align: left;
-  margin-top: 0;
+  
 
 }
+
+
 
 @media only screen and (min-width: 300px) and (max-width: 1200px){
   .top-left h1{
@@ -110,8 +111,8 @@
     }
     .top-left h1{
       margin-top:-100px;
-      color: #2BC500 !important;
-      font-family: Luminari, fantasy, bold !important;
+      
+      font-family:  'Teko', sans-serif !important;
       text-align: left;
       font-size:17px;
     }
@@ -128,13 +129,11 @@
       left: 0;
     }
     .promoTitle h5{
-    
       color: white !important;
-      font-family: 'Ibarra Real Nova', serif;
-      /* text-align: left; */
+      font-family:  'Teko', sans-serif;
       font-size:15px;
-      /* margin-right: 200px; */
     }
+
     @keyframes movingLeftToRight {
   
       0% {   
@@ -158,14 +157,13 @@
    
   
    .mainbutton{
-    position: relative;
-    bottom: 25%;
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
     color: rgb(235, 233, 233) !important;
-    animation: movingUpBottom 0.5s linear;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-delay: .5s;
-    right:28%;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
    }
    .mainbutton:hover {
     background-color: rgb(99, 8, 8) !important;

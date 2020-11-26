@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import './products.css';
 import { bubble as Menu } from 'react-burger-menu';
 import { Button } from '@material-ui/core';
-import photo from '../Images/1slide.jpg';
-import photo1 from '../Images/2slide.jpg';
-import photo2 from '../Images/3slide.jpg';
+
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 

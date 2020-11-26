@@ -23,9 +23,9 @@ function App() {
       {/* <Chernovik /> */}
       <MainCarouselPage/>
    
-      <CarouselPage/>
+      {/* <CarouselPage/> */}
       {/* <Body/> */}
-      <ProductPage/>
+      {/* <ProductPage/> */}
         
       {/* <Footer/>  */}
 
