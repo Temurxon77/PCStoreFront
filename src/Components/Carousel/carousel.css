@@ -24,10 +24,7 @@
   margin-bottom:5px; 
   background-color:red;
 }
-@keyframes movingTopToBottom {
-  from {top: 0px;}
-  to {top: 100px;}
-}
+
 @keyframes movingLeftToRight {
   
   0% {   
@@ -43,7 +40,38 @@
     left: 100px;
   }
 }
-
+.mainbutton{
+  position: absolute;
+  top: 10px;
+  padding: 20px !important;
+  color: rgb(235, 233, 233) !important;
+  animation: movingUpBottom 0.5s linear;
+  border-radius: none !important;
+  background-color: blue !important;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8) !important;
+  color: #f0eaea!important;
+}
+@keyframes movingUpBottom {
+  
+  0% {   
+    bottom: -100%; 
+  }
+  33% {
+    bottom: 40px;
+  }
+  66% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 340px;
+  }
+}
+@keyframes movingTopToBottom {
+  from {top: 0px;}
+  to {top: 100px;}
+}
   
 .top-left {
   position: absolute;
@@ -161,11 +189,15 @@
    .mainbutton{
     position: absolute;
     top: 10px;
+    bottom:100px;
     padding: 20px !important;
     color: rgb(235, 233, 233) !important;
- 
+    animation: movingUpBottom 0.5s linear;
     border-radius: none !important;
     background-color: blue !important;
+    animation-delay: .5s;
+   
+    animation-fill-mode: both;
    }
    .mainbutton:hover {
     background-color: rgb(99, 8, 8) !important;
@@ -190,6 +222,34 @@
 @media only screen and (min-width: 1250px) and (max-width: 1300px){
   .promoTitle{
     bottom: 380px;
+  }
+  .mainbutton{
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+   }
+   @keyframes movingUpBottom {
+  
+    0% {   
+      bottom: -100%; 
+    }
+    33% {
+      bottom: 40px;
+    }
+    66% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 410px;
+    }
   }
 }
 @media only screen and (min-width: 1301px) and (max-width: 1350px){
@@ -217,10 +277,17 @@
     bottom: 450px;
   }
   .mainbutton{
-    animation: movingUpBottom 0.5s linear;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-delay: .5s;
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
    }
    @keyframes movingUpBottom {
   
@@ -247,13 +314,17 @@
     font-size:27px;
   }
   .mainbutton{
-    animation: movingUpBottom 0.5s linear;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-delay: .5s;
-    font-size: 24px;
-    padding: 25px 32px;
-    margin: 33px 25px;
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
    }
    .promoTitle h5{
     font-size:18px;
@@ -286,6 +357,19 @@
   .promoTitle h5{
     font-size:18px;
   }
+  .mainbutton{
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+   }
   @keyframes movingUpBottom {
   
     0% {   
@@ -316,14 +400,17 @@
     
   }
   .mainbutton{
-    animation: movingUpBottom 0.5s linear;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-delay: .5s;
-    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
     color: rgb(235, 233, 233) !important;
-    position: relative;
-
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
    }
   @keyframes movingUpBottom {
   
@@ -368,6 +455,19 @@
     font-size:18px;
     
   }
+  .mainbutton{
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+   }
   @keyframes movingUpBottom {
   
     0% {   
@@ -396,6 +496,19 @@
     font-size:18px;
     
   }
+  .mainbutton{
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+   }
   @keyframes movingUpBottom {
   
     0% {   
@@ -424,20 +537,19 @@
     font-size:20px;
     
   }
-.mainbutton{
-  animation: movingUpBottom 0.5s linear;
-  animation-direction: normal;
-  animation-fill-mode: both;
-  animation-delay: .5s;
-  font-size: 24px;
-  color: rgb(235, 233, 233) !important;
-  position: relative;
-  right:28%;
- }
- .mainbutton:hover {
-  background-color: rgb(99, 8, 8) !important;
-  color: #f0eaea!important;
-}
+  .mainbutton{
+    position: absolute;
+    top: 10px;
+    padding: 20px !important;
+    color: rgb(235, 233, 233) !important;
+ 
+    border-radius: none !important;
+    background-color: blue !important;
+   }
+   .mainbutton:hover {
+    background-color: rgb(99, 8, 8) !important;
+    color: #f0eaea!important;
+   }
 @keyframes movingUpBottom {
 
   0% {   

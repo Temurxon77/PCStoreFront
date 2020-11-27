@@ -4,7 +4,7 @@ import './carousel.css';
 import { Button } from '@material-ui/core';
 import photo from '../Images/car1.jpg';
 import photo1 from '../Images/car2.jpg';
-import photo2 from '../Images/car1.jpg';
+import photo2 from '../Images/car3.jpg';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 
@@ -45,7 +45,7 @@ const MainCarouselPage = () => {
             <div className="top-left"><h1>predator helios 300</h1></div>
             <div className="promoTitle"><h5 >Helios 300 gives you everything you need for battle with an incredibly fast display with a 240Hz refresh rate1 and a 3ms response time2. The device now features NVIDIA® GeForce RTX ™ 2070 graphics with Max-Q1 design, 10th Gen Intel® Core ™ i7 mobile processor1 and our dedicated 4th Gen AeroBlade ™ 3D cooling system</h5>
             </div>
-            {/* <Button className="mainbutton">Принять</Button> */}
+            <Button className="mainbutton">Принять</Button>
           </div>
 
         </div>
@@ -53,8 +53,8 @@ const MainCarouselPage = () => {
         <div className="carousel-item">
           <div>
             <img className="card-img-top" src={photo1} />
-            <div className="top-left"><h1>Z390 AORUS MASTER</h1></div>
-            <div className="promoTitle"><h5 >AORUS Intel Z390 motherboard with 12-phase IR digital processor power supply, Fins-Array cooling system, RGB Fusion 2.0 technology, 802.11ac wireless LAN, three M.2 connectors with Thermal Guard heatsinks, ESS SABER HIFI preamplifier 9118, Intel® GbE LAN with cFosSpeed ​​support, and front and rear USB 3.1 Gen 1 Type-C ™ ports</h5>
+            <div className="top-left"><h1>tuf gaming</h1></div>
+            <div className="promoTitle"><h5 >TUF Gaming VG279Q1A Gaming Monitor –27 inch Full HD (1920x1080), IPS, 165Hz (above 144Hz), Extreme Low Motion Blur™, Adaptive-sync, FreeSync™ Premium, 1ms (MPRT)</h5>
             </div>
            
             <Button className="mainbutton">Принять</Button>
@@ -65,8 +65,8 @@ const MainCarouselPage = () => {
           <div>
            
             <img className="card-img-top" src={photo2} />
-            <div className="top-left"><h1 >PREDATOR HELIOS 300</h1></div>
-           <div className="promoTitle"><h5>Helios 300 gives you everything you need for battle with an incredibly fast display with a 240Hz refresh rate1 and a 3ms response time2. The device now features NVIDIA® GeForce RTX ™ 2070 graphics with Max-Q1 design, 10th Gen Intel® Core ™ i7 mobile processor1 and our dedicated 4th Gen AeroBlade ™ 3D cooling system.</h5>
+            <div className="top-left"><h1 >MSI MEG Z490 Godlike</h1></div>
+           <div className="promoTitle"><h5>High-end motherboards may cost a fortune, but if you’ve got something like the MSI MEG Z490 Godlike under the hood, you’re pretty much guaranteed top-notch performance, especially if you’ve got Intel components. As long as you’re willing to pay the price. In fact, we’d go as far as to say that this is the best z490 board out there right now, with an excellent thermal solution, staggering overclocking performance, easy installation and diagnostic solutions for do-it-yourself-ers, and a solid build</h5>
            </div>
            <Button className="mainbutton">Принять</Button>
           </div>

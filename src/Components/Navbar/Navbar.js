@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../Images/logo.png';
 import './Navbar.css';
+import SearchIcon from '@material-ui/icons/Search';
 import { Button } from '@material-ui/core';
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav" id="items">
-          <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Graphic cards  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="">NVIDIA</a>
@@ -41,8 +42,38 @@ const Navbar = () => {
                       </li>
                   </ul>
               </li>
-              <li class="nav-item" id="monitor">
-                  <a class="nav-link" href="#">Monitors</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mother boards </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">GIGABYTE</a></li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">MSI</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">MSI MEG Z490 Godlike</a></li>
+                                <li><a class="dropdown-item" href="#">MSI MPG Z390M Gaming Edge AC</a></li>
+                                <li><a class="dropdown-item" href="#">MSI Creator TRX40</a></li>
+                            </ul>
+                        </li>
+                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Asus ROG</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Asus ROG Maximus XII HERO</a></li>
+                              <li><a class="dropdown-item" href="#">Asus ROG Strix Z390-I Gaming</a></li>
+                              <li><a class="dropdown-item" href="#">Asus ROG Strix B550-E Gaming</a></li>
+                              <li><a class="dropdown-item" href="#">Asus TUF Gaming B550M-PLUS</a></li>
+                              {/* <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                      <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                  </ul>
+                              </li>
+                              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                      <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                  </ul>
+                              </li> */}
+                          </ul>
+                      </li>
+                  </ul>
               </li>
               
               <li class="nav-item dropdown">
@@ -50,7 +81,7 @@ const Navbar = () => {
                   <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
+                      <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="">Google</a>
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Submenu</a></li>
                               <li><a class="dropdown-item" href="#">Submenu0</a></li>
@@ -76,7 +107,7 @@ const Navbar = () => {
           </ul>
             <form class="form-inline ml-auto" id="search">
                 <input class="form-control" id="inputButton" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" id="searchButton" type="submit">search</button>
+                <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" id="searchButton" type="submit"><SearchIcon/></button>
             </form>
       </div>
   </nav>
