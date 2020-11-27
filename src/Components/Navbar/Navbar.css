@@ -7,12 +7,12 @@
   .dropdown-submenu {
     position:relative;
     padding: 0;
-  
+      
   }
   .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
-    
+   
   }
   
   /* .navbar-collapse { 
@@ -79,10 +79,11 @@
     font-family:  'Teko', sans-serif;
     color: white;
     padding-right: 40px;
+    
     text-transform: uppercase;
     text-align: left;
     font-weight: 600;
-    text-shadow: tomato;
+   
  
 }
 
@@ -92,13 +93,15 @@
 
 
 
+
 ul li a::before { 
   content: ""; 
-  width: 0px; 
+  width: 0; 
   height: 2px; 
   background: red; 
   position: absolute; 
   top: 100%; 
+ 
   left: 0; 
   transition: .5s; 
 } 
@@ -106,7 +109,10 @@ ul li a::before {
 ul li a:hover::before { 
   width: 50%; 
   transform: translateX(100%); 
+  /* bottom: 100%;  */
 } 
+
+
 /* #items:active{
     color: red !important;
     border-bottom: 1px solid white;
