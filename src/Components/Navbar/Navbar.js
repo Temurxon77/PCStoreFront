@@ -6,7 +6,7 @@ import { Button } from '@material-ui/core';
 
 const Navbar = () => {
     return (
-    <nav class="navbar navbar-expand-md"  id="image">
+    <nav class="navbar navbar-expand-md navbar-right "  id="image">
       <img src={logo} class="navbar-brand" style={{width:'50px',height:'50px', marginLeft: '30px'}} />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@ const Navbar = () => {
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav" id="items">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Graphic cards  </a>
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="">NVIDIA</a>
                             <ul class="dropdown-menu">
@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mother boards  </a>
+                <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{textAlign: 'center'}}> Mother boards  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item" href="">GIGABYTE</a>
                         
@@ -83,7 +83,7 @@ const Navbar = () => {
                         
               
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="">Laptops </a>
+                  <a class="nav-link dropdown-toggle" href="" style={{textAlign: 'center'}}>Laptops </a>
                   <ul class="dropdown-menu">
                       <li class="dropdown-submenu"><a class="dropdown-item" href="#">Action</a></li>
                       <li class="dropdown-submenu"><a class="dropdown-item" href="#">Another action</a></li>
@@ -107,11 +107,11 @@ const Navbar = () => {
                       </li>
                   </ul>
               </li>
-              <li class="dropdown-submenu">
-                  <a class="nav-link" href="#">My account</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" style={{textAlign: 'center'}}>My account</a>
               </li>      
           </ul>
-            <form class="form-inline ml-auto" id="search">
+            <form class="form-inline ml-auto" id="search" style={{textAlign: 'center'}}>
                 <input class="form-control" id="inputButton" type="search" placeholder="Search" aria-label="Search"/>
                 <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" id="searchButton" type="submit"><SearchIcon/></button>
             </form>

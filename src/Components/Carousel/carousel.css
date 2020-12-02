@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* STYLES GO HERE */
 
 #myCarousel-indicators {
   top:0;
   bottom:0;
   margin:auto;
-  height:100px;
+  height:50px;
   right:10px; left:95%;
   width:auto;
   -webkit-transform: rotate(90deg);
@@ -18,72 +24,36 @@
   background-color:  #8A868E; 
   width: 15px;
   height: 15px;
+
 }
 
 #myCarousel-indicators .active {
-  margin-bottom:5px; 
   background-color:red;
 }
 
-@keyframes movingLeftToRight {
-  
-  0% {   
-    left: -999999px; 
-  }
-  33% {
-    left: 10px;
-  }
-  66% {
-    left: 50px;
-  }
-  100% {
-    left: 100px;
-  }
-}
 .mainbutton{
   position: absolute;
-  top: 10px;
-  padding: 20px !important;
-  color: rgb(235, 233, 233) !important;
-  animation: movingUpBottom 0.5s linear;
-  border-radius: none !important;
-  background-color: blue !important;
+
+  color: rgb(235, 233, 233);
+  animation: movingUpBottom 0.7s;
+  border-radius: none;
+  background-color: blue;
  }
  .mainbutton:hover {
-  background-color: rgb(99, 8, 8) !important;
-  color: #f0eaea!important;
-}
-@keyframes movingUpBottom {
-  
-  0% {   
-    bottom: -100%; 
-  }
-  33% {
-    bottom: 40px;
-  }
-  66% {
-    bottom: 150px;
-  }
-  100% {
-    bottom: 340px;
-  }
-}
-@keyframes movingTopToBottom {
-  from {top: 0px;}
-  to {top: 100px;}
-}
-  
-.top-left {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+ }
+ .top-left {
   position: absolute;
-  left: 0px !important;
+  left: 0px;
   animation: movingTopToBottom 0.5s linear;
 }
 
   .top-left h1{
-    color: #FFF200 !important;
-    font-family: 'Teko', sans-serif !important;
+    color: #FFF200;
+    font-family: 'Teko', sans-serif;
     text-align: left;
-    font-size: 70px !important;
+    font-size: 70px;
     width: 700px;
     text-transform: uppercase;
   }
@@ -99,470 +69,603 @@
   animation-delay: .5s;
 }
 .promoTitle h5{
-  color: white !important;
-  font-family:  'Teko', sans-serif !important;
-  font-size: 25px !important;
+  color: white;
+  font-family:  'Teko', sans-serif;
+  font-size: 25px;
   text-align: left;
-  
-
 }
-
-
-
-@media only screen and (min-width: 300px) and (max-width: 1200px){
-  .top-left h1{
-    display: none;
-  }
-  .top-left {
-    display: none;
-    }
-  .promoTitle{
-      display: none;
-    }
-  .promoTitle h5{
-      display:none;
-    }
-  
-  
-}
-@media only screen and (min-width: 1201px) and (max-width: 2100px){
  
-  .top-left {
-    position: absolute;
- 
-    top: 8px;
-    left: 16px;
-    color:white;
-    width: 450px;
-    margin-left: 15.6%;
-    animation: movingTopToBottom .5s linear;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    }
-    .top-left h1{
-      margin-top:-100px;
-      
-      font-family:  'Teko', sans-serif !important;
-      text-align: left;
-      font-size:17px;
-    }
-   
-    .promoTitle{
-      position: absolute;
-      width: 400px;
-      bottom: 400px;
-      animation: movingLeftToRight 0.5s linear;
-      animation-delay: .5s;
-      color: white;
-      /* animation-direction: normal; */
-      animation-fill-mode: both;
-      left: 0;
-    }
-    .promoTitle h5{
-      color: white !important;
-      font-family:  'Teko', sans-serif;
-      font-size:15px;
-    }
-
-    @keyframes movingLeftToRight {
-  
-      0% {   
-        left: -999999px; 
-      }
-      33% {
-        left: 0;
-      }
-      66% {
-        left: 0px;
-      }
-      100% {
-        left: 0px;
-      }
-    }
-    @keyframes movingTopToBottom {
-      from {top: 0%;}
-      to {top: 20%;}
-    }
-   
-   
-  
-   .mainbutton{
-    position: absolute;
-    top: 10px;
-    bottom:100px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
-    animation: movingUpBottom 0.5s linear;
-    border-radius: none !important;
-    background-color: blue !important;
-    animation-delay: .5s;
-   
-    animation-fill-mode: both;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-}
-   @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 340px;
-    }
-  }
-}
-@media only screen and (min-width: 1250px) and (max-width: 1300px){
-  .promoTitle{
-    bottom: 380px;
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-   @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 410px;
-    }
-  }
-}
-@media only screen and (min-width: 1301px) and (max-width: 1350px){
-  .promoTitle{
-    bottom: 420px;
-  }
-  @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 410px;
-    }
-  }
-}
-@media only screen and (min-width: 1351px) and (max-width: 1450px){
-  .promoTitle{
-    bottom: 450px;
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-   @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 440px;
-    }
-  }
-  
-}
-@media only screen and (min-width: 1451px) and (max-width: 1550px){
-  .promoTitle{
-    bottom: 500px;
-  }
-  .top-left h1{
-    font-size:27px;
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-   .promoTitle h5{
-    font-size:18px;
-  }
-   @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 500px;
-    }
-  }
-  
-}
-@media only screen and (min-width: 1551px) and (max-width: 1600px){
-  .top-left h1{
-    font-size:28px;
-    margin-right:20px;
-  }
-  .promoTitle{
-    bottom: 530px;
-  }
-  .promoTitle h5{
-    font-size:18px;
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-  @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 530px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1601px) and (max-width: 1701px){
-  .top-left h1{
-    font-size:28px;
-    margin-right:20px;
-  }
-  .promoTitle{
-    bottom: 550px;
-  }
-  .promoTitle h5{
-    font-size:18px;
-    
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-  @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 100px;
-    }
-    100% {
-      bottom: 30px;
-    }
-  }
-  @keyframes movingLeftToRight {
-  
-    0% {   
-      margin-left: -999999px; 
-    }
-    33% {
-      margin-left: 4%;
-    }
-    66% {
-      margin-left: 7%;
-    }
-    100% {
-      margin-left: 14%;
-    }
-  }
-}
-@media only screen and (min-width: 1702px) and (max-width: 1801px){
-  .promoTitle{
-    bottom: 600px;
-  }
-  .top-left h1{
-    font-size:26px;
-    
-  }
-  .promoTitle h5{
-    font-size:18px;
-    
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-  @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 580px;
-    }
-  }
-}
-@media only screen and (min-width: 1802px) and (max-width: 1901px){
-  .promoTitle{
-    bottom: 600px;
-  }
-  .top-left h1{
-    font-size:26px;
-    
-  }
-  .promoTitle h5{
-    font-size:18px;
-    
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
-  @keyframes movingUpBottom {
-  
-    0% {   
-      bottom: -100%; 
-    }
-    33% {
-      bottom: 40px;
-    }
-    66% {
-      bottom: 150px;
-    }
-    100% {
-      bottom: 580px;
-    }
-  }
-}
-@media only screen and (min-width: 1902px) and (max-width: 2201px){
-  .top-left h1{
-    font-size:28px;
-
-  }
-  .promoTitle{
-    bottom: 800px;
-  }
-  .promoTitle h5{
-    font-size:20px;
-    
-  }
-  .mainbutton{
-    position: absolute;
-    top: 10px;
-    padding: 20px !important;
-    color: rgb(235, 233, 233) !important;
- 
-    border-radius: none !important;
-    background-color: blue !important;
-   }
-   .mainbutton:hover {
-    background-color: rgb(99, 8, 8) !important;
-    color: #f0eaea!important;
-   }
 @keyframes movingUpBottom {
 
   0% {   
-    bottom: -100%; 
+    bottom: -999999%; 
   }
   33% {
-    bottom: 40px;
+    bottom: 0px;
   }
   66% {
-    bottom: 150px;
+    bottom: 250px;
   }
   100% {
-    bottom: 780px;
+    bottom: 500px;
   }
 }
+
+@keyframes movingLeftToRight {
+  
+  0% {   
+    margin-left: -999999px; 
+  }
+  33% {
+    margin-left: 4%;
+  }
+  66% {
+    margin-left: 7%;
+  }
+  100% {
+    margin-left: 14%;
+  }
+}
+
+@keyframes movingTopToBottom {
+  from {top: 0%;}
+  to {top: 20%;}
+}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+
+#myCarousel-indicators {
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:50px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#myCarousel-indicators li{   
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+
+}
+
+#myCarousel-indicators .active {
+  background-color:red;
+}
+
+.mainbutton{
+  position: absolute;
+
+  color: rgb(235, 233, 233);
+  animation: movingUpBottom 0.7s;
+  border-radius: none;
+  background-color: blue;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+ }
+ .top-left {
+  position: absolute;
+  left: 0px;
+  animation: movingTopToBottom 0.5s linear;
+}
+
+  .top-left h1{
+    color: #FFF200;
+    font-family: 'Teko', sans-serif;
+    text-align: left;
+    font-size: 70px;
+    width: 700px;
+    text-transform: uppercase;
+  }
+
+.promoTitle{
+  width: 400px;
+  top: 300px;
+  color: white;
+  animation: movingLeftToRight 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  position: relative;
+  animation-delay: .5s;
+}
+.promoTitle h5{
+  color: white;
+  font-family:  'Teko', sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+ 
+@keyframes movingUpBottom {
+
+  0% {   
+    bottom: -999999%; 
+  }
+  33% {
+    bottom: 0px;
+  }
+  66% {
+    bottom: 250px;
+  }
+  100% {
+    bottom: 500px;
+  }
+}
+
+@keyframes movingLeftToRight {
+  
+  0% {   
+    margin-left: -999999px; 
+  }
+  33% {
+    margin-left: 4%;
+  }
+  66% {
+    margin-left: 7%;
+  }
+  100% {
+    margin-left: 14%;
+  }
+}
+
+@keyframes movingTopToBottom {
+  from {top: 0%;}
+  to {top: 20%;}
+}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+
+#myCarousel-indicators {
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:50px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#myCarousel-indicators li{   
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+
+}
+
+#myCarousel-indicators .active {
+  background-color:red;
+}
+
+.mainbutton{
+  position: absolute;
+
+  color: rgb(235, 233, 233);
+  animation: movingUpBottom 0.7s;
+  border-radius: none;
+  background-color: blue;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+ }
+ .top-left {
+  position: absolute;
+  left: 0px;
+  animation: movingTopToBottom 0.5s linear;
+}
+
+  .top-left h1{
+    color: #FFF200;
+    font-family: 'Teko', sans-serif;
+    text-align: left;
+    font-size: 70px;
+    width: 700px;
+    text-transform: uppercase;
+  }
+
+.promoTitle{
+  width: 400px;
+  top: 300px;
+  color: white;
+  animation: movingLeftToRight 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  position: relative;
+  animation-delay: .5s;
+}
+.promoTitle h5{
+  color: white;
+  font-family:  'Teko', sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+ 
+@keyframes movingUpBottom {
+
+  0% {   
+    bottom: -999999%; 
+  }
+  33% {
+    bottom: 0px;
+  }
+  66% {
+    bottom: 250px;
+  }
+  100% {
+    bottom: 500px;
+  }
+}
+
+@keyframes movingLeftToRight {
+  
+  0% {   
+    margin-left: -999999px; 
+  }
+  33% {
+    margin-left: 4%;
+  }
+  66% {
+    margin-left: 7%;
+  }
+  100% {
+    margin-left: 14%;
+  }
+}
+
+@keyframes movingTopToBottom {
+  from {top: 0%;}
+  to {top: 20%;}
+}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* STYLES GO HERE */
+#myCarousel-indicators {
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:50px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#myCarousel-indicators li{   
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+
+}
+
+#myCarousel-indicators .active {
+  background-color:red;
+}
+
+.mainbutton{
+  position: absolute;
+
+  color: rgb(235, 233, 233);
+  animation: movingUpBottom 0.7s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  background-color: blue;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+ }
+ .top-left {
+  position: absolute;
+ 
+  animation: movingTopToBottom 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  z-index: 24;
+}
+
+  .top-left h1{
+    color: #FFF200;
+    font-family: 'Teko', sans-serif;
+    text-align: left;
+    font-size: 70px ;
+    width: 700px;
+    text-transform: uppercase;
+    z-index: 24;
+  }
+
+.promoTitle{
+  width: 400px;
+  top: 300px;
+  color: white;
+  animation: movingLeftToRight 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  position: relative;
+  animation-delay: .5s;
+  z-index: 24;
+}
+.promoTitle h5{
+  color: white ;
+  font-family:  'Teko', sans-serif ;
+  font-size: 25px ;
+  text-align: left;
+  z-index: 24;
+}
+ 
+@keyframes movingUpBottom {
+
+  0% {   
+    bottom: 0%; 
+  }
+  33% {
+    bottom: 50px;
+  }
+  66% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 150px;
+  }
+}
+
+@keyframes movingLeftToRight {
+  
+  0% {   
+    margin-left: -999999px; 
+  }
+  33% {
+    margin-left: 4%;
+  }
+  66% {
+    margin-left: 7%;
+  }
+  100% {
+    margin-left: 14%;
+  }
+}
+
+@keyframes movingTopToBottom {
+  from {top: 0%;}
+  to {top: 20%;}
+}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* STYLES GO HERE */
+#myCarousel-indicators {
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:50px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#myCarousel-indicators li{   
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+
+}
+
+#myCarousel-indicators .active {
+  background-color:red;
+}
+
+.mainbutton{
+  position: absolute;
+  z-index: 24;
+  left: 400px;
+  animation: movingUpBottom .7s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  border-radius: none;
+  background-color: blue;
+  color: white;
+ }
+ .mainbutton:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+  animation: movingUpBottom 0.7s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+ }
+
+ .mainbutton1{
+  position: absolute;
+  z-index: 24;
+  left: 400px;
+  animation: movingUpBottom .7s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  border-radius: none;
+  background-color: blue;
+  color: white;
+  width: 150px;
+ }
+ .mainbutton1:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+  animation: movingUpBottom 0.7s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+ }
+
+ .top-left {
+  position: absolute;
+  left: 298px;
+  top: 200px; 
+  animation: movingTopToBottom 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  z-index: 24;
+  color: #FFF200;
+  font-family: 'Teko', sans-serif;
+  text-align: left;
+  font-size: 70px;
+  width: 700px;
+  text-transform: uppercase;
+  z-index: 24;
+}
+
+.promoTitle{
+  width: 400px;
+  top: 400px;
+  animation: movingLeftToRight 0.5s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  position: relative;
+  animation-delay: .5s;
+  z-index: 24;
+  color: white;
+  font-family:  'Teko', sans-serif;
+  font-size: 25px;
+  text-align: left;
+  position: absolute;
+}
+
+
+@keyframes movingUpBottom {
+  from {bottom: 0%;}
+  to {bottom: 400px;}
+}
+
+@keyframes movingLeftToRight {
+  
+  0% {   
+    margin-left: -999999px; 
+  }
+  33% {
+    margin-left: 40%;
+  }
+  66% {
+    margin-left: 70%;
+  }
+  100% {
+    margin-left: 140%;
+  }
+}
+
+@keyframes movingTopToBottom {
+  from {top: 0%;}
+  to {top: 50px;}
+}
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+.top-left {
+  display: none;
+}
+  .top-left h1{
+    display: none;
+  }
+
+  .promoTitle{
+    display: none;
+  }
+  .promoTitle h5{
+    display: none;
+  }
+  .mainbutton{
+    display: none;
+  }
+  #myCarousel-indicators{
+    display: none;
+  }
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+.top-left {
+    display: none;
+  }
+
+  .top-left h1{
+    display: none;
+  }
+
+  .promoTitle{
+    display: none;
+  }
+  .promoTitle h5{
+    display: none;
+  }
+  .mainbutton{
+    display: none;
+  }
+  #myCarousel-indicators{
+    display: none;
+  }
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+.top-left {
+  display: none;
+}
+
+  .top-left h1{
+    display: none;
+  }
+
+  .promoTitle{
+    display: none;
+  }
+  .promoTitle h5{
+    display: none;
+  }
+  .mainbutton{
+    display: none;
+  }
+  #myCarousel-indicators{
+    display: none;
+  }
 }
