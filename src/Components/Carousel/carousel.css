@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
- 
+.carouselInner{
+  height: 50% !important;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 /* STYLES GO HERE */
+
+
 
 #myCarousel-indicators {
   top:0;
@@ -372,12 +376,9 @@ and (min-width : 1224px) {
 
 .mainbutton{
   position: absolute;
-
-  color: rgb(235, 233, 233);
   animation: movingUpBottom 0.7s linear;
   animation-direction: normal;
   animation-fill-mode: both;
-  background-color: blue;
  }
  .mainbutton:hover {
   background-color: rgb(99, 8, 8);
@@ -463,29 +464,22 @@ and (min-width : 1224px) {
 @media only screen
 and (min-width : 1824px) {
 /* STYLES GO HERE */
-#myCarousel-indicators {
-  top:0;
-  bottom:0;
-  margin:auto;
-  height:50px;
-  right:10px; left:95%;
-  width:auto;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+
+.button:focus{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 14px 40px;
 }
 
-#myCarousel-indicators li{   
-  background-color:  #8A868E; 
-  width: 15px;
-  height: 15px;
-
+.button{
+  color: black ;
+  padding: 14px 40px;
 }
 
-#myCarousel-indicators .active {
-  background-color:red;
+.button:hover{
+  color: white ;
+
 }
 
 .mainbutton{
@@ -496,9 +490,14 @@ and (min-width : 1824px) {
   animation-direction: normal;
   animation-fill-mode: forwards;
   border-radius: none;
-  background-color: blue;
-  color: white;
+  background-color:#FFF200;
+  font-family: 'Teko', sans-serif;
+  color: black;
+  padding: 5px 40px;
+  outline: none !important;
+  border: none;
  }
+
  .mainbutton:hover {
   background-color: rgb(99, 8, 8);
   color: #f0eaea;
@@ -511,26 +510,48 @@ and (min-width : 1824px) {
   position: absolute;
   z-index: 24;
   left: 400px;
-  animation: movingUpBottom .7s linear;
+  animation: movingUpBottom1 .7s linear;
   animation-direction: normal;
   animation-fill-mode: forwards;
   border-radius: none;
-  background-color: blue;
+  background-color: #FFF200;
+  font-family: 'Teko', sans-serif;
   color: white;
-  width: 150px;
+  padding: 5px 40px;
  }
  .mainbutton1:hover {
   background-color: rgb(99, 8, 8);
   color: #f0eaea;
-  animation: movingUpBottom 0.7s linear;
+  animation: movingUpBottom1 0.7s linear;
   animation-direction: normal;
   animation-fill-mode: forwards;
+ }
+
+ .mainbutton2{
+  position: absolute;
+  z-index: 24;
+  left: 400px;
+  animation: movingUpBottom2 .7s linear;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  border-radius: none;
+  background-color: #FFF200;
+  font-family: 'Teko', sans-serif;
+  color: white;
+  padding: 5px 40px;
+ }
+ .mainbutton2:hover {
+  background-color: rgb(99, 8, 8);
+  color: #f0eaea;
+  animation: movingUpBottom2 0.7s linear;
+  animation-direction: normal;
+  animation-fill-mode: both;
  }
 
  .top-left {
   position: absolute;
   left: 298px;
-  top: 200px; 
+  top: 150px; 
   animation: movingTopToBottom 0.5s linear;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -541,7 +562,6 @@ and (min-width : 1824px) {
   font-size: 70px;
   width: 700px;
   text-transform: uppercase;
-  z-index: 24;
 }
 
 .promoTitle{
@@ -561,9 +581,10 @@ and (min-width : 1824px) {
 }
 
 
+
 @keyframes movingUpBottom {
-  from {bottom: 0%;}
-  to {bottom: 400px;}
+  from {bottom: 0px;}
+  to {bottom: 250px;}
 }
 
 @keyframes movingLeftToRight {
@@ -583,9 +604,21 @@ and (min-width : 1824px) {
 }
 
 @keyframes movingTopToBottom {
-  from {top: 0%;}
-  to {top: 50px;}
+  from {top: 0;}
+  to {top: -10px;}
 }
+
+@keyframes movingUpBottom1 {
+  from {bottom: 0%;}
+  to {bottom: 340px;}
+}
+
+
+@keyframes movingUpBottom2 {
+  from {bottom: 0%;}
+  to {bottom: 150px;}
+}
+
 }
  
 /* iPhone 5 (portrait & landscape)----------- */
