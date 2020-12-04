@@ -23,7 +23,7 @@ function App() {
       <MainCarouselPage/>
    
       {/* <CarouselPage/> */}
-      {/* <Body/> */}
+      <Body/>
       {/* <ProductPage/> */}
         
       {/* <Footer/>  */}
