@@ -22,11 +22,11 @@ function App() {
       {/* <Preloader/>  */}
       <MainCarouselPage/>
    
-      <CarouselPage/>
+      {/* <CarouselPage/> */}
       <Body/>
-      <ProductPage/>
+      {/* <ProductPage/> */}
         
-      <Footer/> 
+      {/* <Footer/>  */}
 
     </div>
   );
