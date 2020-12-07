@@ -551,7 +551,7 @@ and (min-width : 1824px) {
  .top-left {
   position: absolute;
   left: 298px;
-  top: 150px; 
+  margin-top: -80px;
   animation: movingTopToBottom 0.5s linear;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -566,7 +566,7 @@ and (min-width : 1824px) {
 
 .promoTitle{
   width: 400px;
-  top: 400px;
+  top: 300px;
   animation: movingLeftToRight 0.5s linear;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -584,7 +584,7 @@ and (min-width : 1824px) {
 
 @keyframes movingUpBottom {
   from {bottom: 0px;}
-  to {bottom: 250px;}
+  to {bottom: 510px;}
 }
 
 @keyframes movingLeftToRight {
@@ -610,13 +610,13 @@ and (min-width : 1824px) {
 
 @keyframes movingUpBottom1 {
   from {bottom: 0%;}
-  to {bottom: 340px;}
+  to {bottom: 610px;}
 }
 
 
 @keyframes movingUpBottom2 {
   from {bottom: 0%;}
-  to {bottom: 150px;}
+  to {bottom: 430px;}
 }
 
 }

@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import './carousel.css';
 
 import { Button } from '@material-ui/core';
-import photo from '../Images/car1.jpg';
-import photo1 from '../Images/car2.jpg';
-import photo2 from '../Images/car3.jpg';
+import photo from '../Images/1.jpg';
+import photo1 from '../Images/2.jpg';
+import photo2 from '../Images/1.jpg';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 
@@ -27,7 +27,7 @@ const MainCarouselPage = () => {
   }
   return (
 
-    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: '-10px'}}>
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: 'auto', marginLeft: 'auto', marginRight: 'auto'}}>
 
       <ol className="carousel-indicators" id="myCarousel-indicators">
         <li data-target="#video-carousel-example" data-slide-to="0" className="active" ></li>

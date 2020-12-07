@@ -16,12 +16,12 @@ const Navbar = () => {
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="">NVIDIA</a>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="" >NVIDIA</a>
                             <ul class="dropdown-menu">
-                              <li class="dropdown-submenu"><a class="dropdown-item" href="#">GeForce RTX 3070+</a></li>
-                              <li class="dropdown-submenu"><a class="dropdown-item" href="#">GeForce RTX 3060 Ti</a></li>
-                              <li class="dropdown-submenu"><a class="dropdown-item" href="#">GeForce RTX 3070 Ti TUF Gaming</a></li>
-                              <li class="dropdown-submenu"><a class="dropdown-item" href="#">GeForce RTX 3090</a></li>
+                              <li class="dropdown-submenu"><a class="dropdown-item" href="#" >GeForce RTX 3070+</a></li>
+                              <li class="dropdown-submenu"><a class="dropdown-item" href="#" >GeForce RTX 3060 Ti</a></li>
+                              <li class="dropdown-submenu"><a class="dropdown-item" href="#" >GeForce RTX 3070 Ti TUF Gaming</a></li>
+                              <li class="dropdown-submenu"><a class="dropdown-item" href="#" >GeForce RTX 3090</a></li>
                             </ul>
                       </li>
                       <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="">AMD Radeon</a>

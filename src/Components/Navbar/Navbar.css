@@ -68,9 +68,6 @@
     color: black !important;
   }
 
-
-
-
 ul li a::before { 
   content: ""; 
   width: 0; 
@@ -89,7 +86,7 @@ ul li a:hover::before {
 } 
 
 #image{
-  background-image: url(1234.JPG) !important;
+  background: black !important;
 }
 
 .navbar{
@@ -100,4 +97,10 @@ ul li a:hover::before {
   margin-left: 10%;
 }
 
+#menu{
+  background:  #1E1E1E;
+}
 
+/* #menu:hover{
+  background: #252526;
+} */
