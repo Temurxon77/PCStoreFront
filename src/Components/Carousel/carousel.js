@@ -27,7 +27,7 @@ const MainCarouselPage = () => {
   }
   return (
 
-    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: 'auto', marginLeft: 'auto', marginRight: 'auto'}}>
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: '-10px', marginLeft: 'auto', marginRight: 'auto', marginBottom: '-10px'}}>
 
       <ol className="carousel-indicators" id="myCarousel-indicators">
         <li data-target="#video-carousel-example" data-slide-to="0" className="active" ></li>
@@ -38,7 +38,7 @@ const MainCarouselPage = () => {
       <div className="carousel-inner" id="carouselInner" role="listbox"> 
 
         <div className="carousel-item active" >
-          <div >
+          <div>
 
             <img className="card-img-top" id="images" src={photo} />
             

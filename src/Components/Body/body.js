@@ -7,7 +7,8 @@ import capture from '../Images/motherboards.jpg';
 import capture1 from '../Images/graphic.jpg';
 import capture2 from '../Images/processor.jpg';
 import capture3 from '../Images/cases.jpg';
-import capture4 from '../Images/ozu.jpg'
+import capture4 from '../Images/ozu.jpg';
+import {Animated} from "react-animated-css";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,31 +25,45 @@ const useStyles = makeStyles((theme) => ({
       return (
     
         <div class="wrapper">
-             
             <h2><strong>PC Components</strong></h2>
             <div class="cards">
-                <figure class="card">
-                    <img src={capture} />
-                    <figcaption>Motherboards</figcaption>
-                </figure>
-                <figure class="card">
-                    <img src={capture1} />
-                    <figcaption>Graphic Cards</figcaption>
-                </figure>
-                <figure class="card">
-                    <img src={capture2} />
-                    <figcaption>Processors</figcaption>
-                </figure>
-                <figure class="card">
-                    <img src={capture3} />
-                    <figcaption>PC Cases</figcaption>
-                </figure>
-                <figure class="card">
-                    <img src={capture4} />
-                    <figcaption>RAMS</figcaption>
-                </figure>
+            <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="500">
                
+                    <figure class="card">
+                        <img src={capture} />
+                        <figcaption>Motherboards</figcaption>
+                    </figure>  
+                    </Animated> 
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="400">
+                    <figure class="card">
+                        <img src={capture1} />
+                        <figcaption>Graphic Cards</figcaption>
+                    </figure>
+                    </Animated>
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="300">
+                    <figure class="card">
+                        <img src={capture2} />
+                        <figcaption>Processors</figcaption>
+                    </figure>
+                    </Animated>
+                    
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="200">
+                    <figure class="card">
+                        <img src={capture3} />
+                        <figcaption>PC Cases</figcaption>
+                    </figure>
+                    </Animated>
+                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="100">
+                    <figure class="card">
+                        <img src={capture4} />
+                        <figcaption>RAMS</figcaption>
+                    </figure>
+              
+            </Animated>
+            
             </div>
+                
+        
             <h2><strong>What's new?</strong></h2>
              <div class="news">
                 <figure class="article">

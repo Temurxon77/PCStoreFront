@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
 .abs,
  h2:after,
  .cards .card figcaption,
@@ -216,3 +218,13 @@
    transform: none;
  }
  
+
+
+
+
+ .animate__animated.animate__bounce {
+  --animate-duration: 20s;
+}
+
+
+

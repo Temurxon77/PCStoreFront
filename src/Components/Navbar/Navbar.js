@@ -4,6 +4,7 @@ import './Navbar.css';
 import SearchIcon from '@material-ui/icons/Search';
 import { Button } from '@material-ui/core';
 
+
 const Navbar = () => {
     return (
     <nav class="navbar navbar-expand-md navbar-right "  id="image">
@@ -13,8 +14,9 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav" id="items">
+         
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards  </a>
+               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="" >NVIDIA</a>
                             <ul class="dropdown-menu">
@@ -42,9 +44,9 @@ const Navbar = () => {
                       </li>
                   </ul>
               </li>
-
+            
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{textAlign: 'center'}}> Mother boards  </a>
+                <a class="nav-link dropdown-toggle" href=""   id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{textAlign: 'center'}}>Mother boards  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item" href="">GIGABYTE</a>
                         
@@ -80,8 +82,8 @@ const Navbar = () => {
                                       <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
                                   </ul>
                               </li> */}
-                        
-              
+                 
+                
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="" style={{textAlign: 'center'}}>Laptops </a>
                   <ul class="dropdown-menu">
@@ -107,9 +109,13 @@ const Navbar = () => {
                       </li>
                   </ul>
               </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" style={{textAlign: 'center'}}>My account</a>
-              </li>      
+           
+            
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" style={{textAlign: 'center'}}>My account</a>
+                </li>  
+               
           </ul>
             <form class="form-inline ml-auto" id="search" style={{textAlign: 'center'}}>
                 <input class="form-control" id="inputButton" type="search" placeholder="Search" aria-label="Search"/>
