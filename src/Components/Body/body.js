@@ -26,45 +26,48 @@ const useStyles = makeStyles((theme) => ({
     
         <div class="wrapper">
             <h2><strong>PC Components</strong></h2>
-            <div class="cards">
-            <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="500">
-               
-                    <figure class="card">
+            <div className="cards">
+           
+
+                                           
+                    <figure class="card" >
                         <img src={capture} />
                         <figcaption>Motherboards</figcaption>
-                    </figure>  
-                    </Animated> 
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="400">
-                    <figure class="card">
-                        <img src={capture1} />
-                        <figcaption>Graphic Cards</figcaption>
-                    </figure>
-                    </Animated>
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="300">
-                    <figure class="card">
-                        <img src={capture2} />
-                        <figcaption>Processors</figcaption>
-                    </figure>
-                    </Animated>
+                    </figure>               
+                   
+
+                                      
+                        <figure class="card" >
+                            <img src={capture1} />
+                            <figcaption>Graphic Cards</figcaption>
+                        </figure>             
+                     
+
+                               
+                        <figure class="card" >
+                            <img src={capture2} />
+                            <figcaption>Processors</figcaption>
+                        </figure>                  
                     
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="200">
-                    <figure class="card">
-                        <img src={capture3} />
-                        <figcaption>PC Cases</figcaption>
-                    </figure>
-                    </Animated>
-                    <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDelay="100">
-                    <figure class="card">
-                        <img src={capture4} />
-                        <figcaption>RAMS</figcaption>
-                    </figure>
-              
-            </Animated>
-            
-            </div>
+
+                                      
+                        <figure class="card" >
+                            <img src={capture3} />
+                            <figcaption>PC Cases</figcaption>
+                        </figure>                   
+                    
+
+                                         
+                        <figure class="card">
+                            <img src={capture4} />
+                            <figcaption>RAMS</figcaption>
+                        </figure>               
+                        
+                
+           
                 
         
-            <h2><strong>What's new?</strong></h2>
+            {/* <h2><strong>What's new?</strong></h2>
              <div class="news">
                 <figure class="article">
                     <img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
@@ -84,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
                         </p>
                     </figcaption>
                 </figure>
+                </div> */}
             </div>
         </div>
       )

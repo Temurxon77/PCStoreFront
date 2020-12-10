@@ -40,8 +40,8 @@ function App() {
   // }
   // window.onload = alertSize();
   // function scrollEvent(){
-  //   if(document.body.scrollTop >  || document.documentElement.scrollTop > 200){
-  //     alert('Hey it\'s working!');
+  //   if(document.body.scrollTop >  2000|| document.documentElement.scrollTop > 2000){
+  //     // alert('Hey it\'s working!');
   //   }else {
   //     //console.log(alertSize());
   //   }

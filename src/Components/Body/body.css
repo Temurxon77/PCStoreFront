@@ -16,7 +16,6 @@
  .news .card,
  .news .article {
    position: relative;
-
  }
  .fix {
    position: fixed;
@@ -54,7 +53,7 @@
    vertical-align: middle;
  }
  body {
-   background: red;
+
    font-family: 'Alegreya Sans';
  }
  .wrapper {
@@ -68,8 +67,7 @@
    margin: 0;
  }
  h2 strong {
-   z-index: 2;
-  
+   z-index: 2; 
    padding: 4px 8px;
    text-transform: uppercase;
    font-size: 45px;
@@ -81,7 +79,6 @@
    margin-left: 10px;
  }
  h2:after {
-  
    z-index: 1;
    bottom: 50%;
    margin-bottom: -2px;
@@ -93,7 +90,6 @@
  .cards,
  .news {
    flex-flow: row wrap;
-
  }
  .cards .card,
  .news .card {
@@ -126,6 +122,7 @@
    color: #fff;
    transform: translateY(100%);
    transition: 0.3s;
+  
  }
  .cards .card:after,
  .news .card:after {
@@ -139,7 +136,7 @@
    transform: rotate(45deg);
    background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
    transition: 0.3s;
-   
+
  }
  .cards .card:hover,
  .news .card:hover,
@@ -175,8 +172,7 @@
    width: 350px;
    height: 235px;
    margin: 20px;
-   margin-left: auto;
-   margin-right: auto;
+
  }
  .news .article img {
    width: 100%;
@@ -221,10 +217,6 @@
 
 
 
-
- .animate__animated.animate__bounce {
-  --animate-duration: 20s;
-}
 
 
 
