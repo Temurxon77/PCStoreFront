@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { Button } from '@material-ui/core';
 
 
+
 const Navbar = () => {
     return (
     <nav class="navbar navbar-expand-md navbar-right "  id="image">
@@ -16,7 +17,7 @@ const Navbar = () => {
           <ul class="navbar-nav" id="items">
          
             <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards</a>
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="center" style={{textAlign: 'center'}}>Graphic cards</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="" >NVIDIA</a>
                             <ul class="dropdown-menu">
