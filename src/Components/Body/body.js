@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 import "@sl-codeblaster/react-3d-animated-card/dist/index.css";
 import './body.css';
-import capture from '../Images/motherboards.jpg';
+import capture from '../Images/mat.png';
 import capture1 from '../Images/graphic.jpg';
 import capture2 from '../Images/processor.jpg';
 import capture3 from '../Images/cases.jpg';
@@ -70,49 +70,106 @@ const useStyles = makeStyles((theme) => ({
 
 	</div>
 
-	<h2><strong>What's new?</strong></h2>
+	<h2><strong><div style={{position: 'center'}}>What's new?</div></strong></h2>
 
 	<div class="news">
 
-		<figure class="article">
-
+		<figure class="article" style={{width: '400px', height: '490px'}}>
 			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
-
 			<figcaption>
-
 				<h3>New Item</h3>
-
 				<p>
-
 					In today’s update, two heads are better than one, and three heads are better than that, as the all-new Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
-
 				</p>
-
 			</figcaption>
-
 		</figure>
 
 		<figure class="article">
-
 			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
-
 			<figcaption>
-
 				<h3>Update</h3>
-
 				<p>
-
 					Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
-
 				</p>
-
 			</figcaption>
-
 		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<figcaption>
+				<h3>New Item</h3>
+				<p>
+					In today’s update, two heads are better than one, and three heads are better than that, as the all-new Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<figcaption>
+				<h3>New Item</h3>
+				<p>
+					In today’s update, two heads are better than one, and three heads are better than that, as the all-new Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<figcaption>
+				<h3>New Item</h3>
+				<p>
+					In today’s update, two heads are better than one, and three heads are better than that, as the all-new Flockheart’s Gamble Arcana item for Ogre Magi makes its grand debut.
+				</p>
+			</figcaption>
+		</figure>
+		
+		<div className="second-row">
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<figcaption>
+				<h3>Update</h3>
+				<p>
+					Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<figcaption>
+				<h3>Update</h3>
+				<p>
+					Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<figcaption>
+				<h3>Update</h3>
+				<p>
+					Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
+				</p>
+			</figcaption>
+		</figure>
+
+		<figure class="article">
+			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<figcaption>
+				<h3>Update</h3>
+				<p>
+					Just in time for Lunar New Year and the Rat’s time in the cyclical place of honor, the Treasure of Unbound Majesty is now available.
+				</p>
+			</figcaption>
+		</figure>
+		</div>
 
 	</div>
 
 </div>
+
       )
     };
     
