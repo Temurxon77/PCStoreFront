@@ -8,6 +8,11 @@ import capture1 from '../Images/graphic.jpg';
 import capture2 from '../Images/processor.jpg';
 import capture3 from '../Images/cases.jpg';
 import capture4 from '../Images/ozu.jpg';
+import capture5 from '../Images/kreslo.png';
+import capture6 from '../Images/monitor.png';
+import capture7 from '../Images/naushniki.png';
+import capture8 from '../Images/nabor.png';
+import capture9 from '../Images/kreslo1.png'
 import svg from '../Images/bestseller.svg';
 import {Animated} from "react-animated-css";
 
@@ -31,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
 
 		<figure class="card" style={{width: '600px', height: '840px'}}>
 
-			<img src={capture} />
+			<img src={capture} style={{background: 'black'}}/>
 
-			<figcaption>Dota 2</figcaption>
+			<figcaption>Motherboards</figcaption>
 
 		</figure>
 
@@ -41,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
 			<img src={capture1} />
 
-			<figcaption>Stick Fight</figcaption>
+			<figcaption>Graphic cards</figcaption>
 
 		</figure>
 
@@ -49,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
 			<img src={capture2} />
 
-			<figcaption>Minion Masters</figcaption>
+			<figcaption>Processors</figcaption>
 
 		</figure>
 
@@ -57,25 +62,25 @@ const useStyles = makeStyles((theme) => ({
 
 			<img src={capture3} />
 
-			<figcaption>KoseBoz!</figcaption>
+			<figcaption>Cases</figcaption>
 
 		</figure>
         <figure class="card" style={{marginTop: '-420px', left: '1260px'}}>
 
             <img src={capture4} />
 
-            <figcaption>KoseBoz!</figcaption>
+            <figcaption>RAM</figcaption>
 
         </figure>
 
 	</div>
 
-	<h2><strong><div style={{position: 'center'}}>What's new?</div></strong></h2>
+	<h2><strong><div style={{position: 'center'}}>Beatiful in every way</div></strong></h2>
 
-	<div class="news">
+	<div class="news" style={{ marginTop: '-55px'}}>
 
 		<figure class="article" style={{width: '400px', height: '490px'}}>
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<img src={capture9} />
 			<figcaption>
 				<h3>New Item</h3>
 				<p>
@@ -85,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<img src={capture5} />
 			<figcaption>
 				<h3>Update</h3>
 				<p>
@@ -95,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<img src={capture6} />
 			<figcaption>
 				<h3>New Item</h3>
 				<p>
@@ -105,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<img src={capture7} />
 			<figcaption>
 				<h3>New Item</h3>
 				<p>
@@ -115,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news1.jpg" />
+			<img src={capture8} />
 			<figcaption>
 				<h3>New Item</h3>
 				<p>
@@ -126,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
 		
 		<div className="second-row">
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<img src={capture8} />
 			<figcaption>
 				<h3>Update</h3>
 				<p>
@@ -136,7 +141,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<img src={capture7} />
 			<figcaption>
 				<h3>Update</h3>
 				<p>
@@ -146,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<img src={capture6} />
 			<figcaption>
 				<h3>Update</h3>
 				<p>
@@ -156,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
 		</figure>
 
 		<figure class="article">
-			<img src="https://mrreiha.keybase.pub/codepen/hover-fx/news2.png" />
+			<img src={capture5} />
 			<figcaption>
 				<h3>Update</h3>
 				<p>
