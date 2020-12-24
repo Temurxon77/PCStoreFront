@@ -4,7 +4,7 @@ import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 import "@sl-codeblaster/react-3d-animated-card/dist/index.css";
 import './body.css';
 import capture from '../Images/mat.png';
-import capture1 from '../Images/graphic.jpg';
+import capture1 from '../Images/graphic.png';
 import capture2 from '../Images/processor.jpg';
 import capture3 from '../Images/cases.jpg';
 import capture4 from '../Images/ozu.jpg';
@@ -32,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
 
 	<h2><strong><img src={svg} className="svg"/> Bestsellers<span>( 5 )</span></strong></h2>
 
-	<div class="cards">
+	<div class="cards" style={{marginRight: 'auto', marginLeft: 'auto'}}>
 
 		<figure class="card" style={{width: '600px', height: '840px'}}>
 
-			<img src={capture} style={{background: 'black'}}/>
+			<img src={capture} style={{background: '#090909'}}/>
 
 			<figcaption>Motherboards</figcaption>
 
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 
 		<figure class="card">
 
-			<img src={capture1} />
+			<img src={capture1} style={{background: '#090909'}}/>
 
 			<figcaption>Graphic cards</figcaption>
 
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 
 		<figure class="card">
 
-			<img src={capture2} />
+			<img src={capture2} style={{background: '#090909'}}/>
 
 			<figcaption>Processors</figcaption>
 
@@ -74,10 +74,10 @@ const useStyles = makeStyles((theme) => ({
         </figure>
 
 	</div>
-
-	<h2><strong><div style={{position: 'center'}}>Beatiful in every way</div></strong></h2>
-
-	<div class="news" style={{ marginTop: '-55px'}}>
+	<div className="back" style={{backgroundColor: '#090909', marginTop: '150px'}}>
+	<h2><strong><div style={{position: 'center', marginTop: '-50px'}}>Beatiful in every way</div></strong></h2>
+		
+	<div class="news" style={{ marginTop: '-55px', marginLeft: 'auto', marginRight: 'auto'}}>
 
 		<figure class="article" style={{width: '400px', height: '490px'}}>
 			<img src={capture9} />
@@ -172,7 +172,7 @@ const useStyles = makeStyles((theme) => ({
 		</div>
 
 	</div>
-
+		</div>
 </div>
 
       )

@@ -340,8 +340,8 @@ and (orientation : portrait) {
 }
 
 @keyframes movingTopToBottom {
-  from {top: 0%;}
-  to {top: 20%;}
+  from {top: 0;}
+  to {top: 200px;}
 }
 }
  
@@ -394,7 +394,7 @@ and (min-width : 1224px) {
 }
 
   .top-left h1{
-    color: #FFF200;
+    /* color: #FFF200; */
     font-family: 'Teko', sans-serif;
     text-align: left;
     font-size: 70px ;
@@ -455,8 +455,8 @@ and (min-width : 1224px) {
 }
 
 @keyframes movingTopToBottom {
-  from {top: 0%;}
-  to {top: 20%;}
+  from {top: 0;}
+  to {top: -450px;}
 }
 }
  
@@ -469,6 +469,37 @@ and (min-width : 1824px) {
   outline: none;
   border: none;
   background-color: transparent;
+}
+
+#myCarousel-indicators {
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:50px;
+  right:10px; left:95%;
+  width:auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+#myCarousel-indicators li{   
+  background-color:  #8A868E; 
+  width: 15px;
+  height: 15px;
+
+}
+
+#myCarousel-indicators .active {
+  background-color:red;
+}
+
+#myCarousel-indicators #carouselInner:hover{
+  opacity: 1;
+  z-index: 10;
 }
 
 .button{
@@ -488,7 +519,8 @@ and (min-width : 1824px) {
   animation-direction: normal;
   animation-fill-mode: forwards;
   border-radius: none;
-  background-color:#FFF200;
+  /* background-color:#FFF200; */
+  background-color: white;
   font-family: 'Teko', sans-serif;
   color: black;
   padding: 5px 40px;
@@ -512,7 +544,8 @@ and (min-width : 1824px) {
   animation-direction: normal;
   animation-fill-mode: forwards;
   border-radius: none;
-  background-color: #FFF200;
+  /* background-color: #FFF200; */
+  background-color: white;
   font-family: 'Teko', sans-serif;
   color: white;
   padding: 5px 40px;
@@ -533,7 +566,8 @@ and (min-width : 1824px) {
   animation-direction: normal;
   animation-fill-mode: forwards;
   border-radius: none;
-  background-color: #FFF200;
+  /* background-color: #FFF200; */
+  background-color: white;
   font-family: 'Teko', sans-serif;
   color: white;
   padding: 5px 40px;
@@ -554,7 +588,8 @@ and (min-width : 1824px) {
   animation-direction: normal;
   animation-fill-mode: both;
   z-index: 24;
-  color: #FFF200;
+  /* color: #FFF200; */
+  color: red;
   font-family: 'Teko', sans-serif;
   text-align: left;
   font-size: 70px;
@@ -578,8 +613,6 @@ and (min-width : 1824px) {
   position: absolute;
 }
 
-
-
 @keyframes movingUpBottom {
   from {bottom: 0px;}
   to {bottom: 510px;}
@@ -601,22 +634,16 @@ and (min-width : 1824px) {
   }
 }
 
-@keyframes movingTopToBottom {
-  from {top: 0;}
-  to {top: -10px;}
-}
-
 @keyframes movingUpBottom1 {
   from {bottom: 0%;}
-  to {bottom: 610px;}
+  to {bottom: 595px;}
 }
 
 
 @keyframes movingUpBottom2 {
   from {bottom: 0%;}
-  to {bottom: 430px;}
+  to {bottom: 420px;}
 }
-
 }
  
 /* iPhone 5 (portrait & landscape)----------- */
