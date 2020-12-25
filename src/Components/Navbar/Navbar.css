@@ -59,7 +59,7 @@ and (min-width : 1824px) {
  
 }
 
-.navbar-collapse { 
+/* .navbar-collapse { 
   transform: translateY(-100%); 
   transition: transform .5s cubic-bezier(.4, 0, .2 ,1);
   background-color: transparent;
@@ -73,7 +73,7 @@ and (min-width : 1824px) {
 .navbar-nav:hover .navbar-collapse{
   transform: translateY(0);
   z-index: 24;
-}
+} */
 
 .dropdown-menu > li > a:hover:after {
   transform: rotate(-90deg); 

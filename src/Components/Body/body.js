@@ -15,6 +15,7 @@ import capture8 from '../Images/nabor.png';
 import capture9 from '../Images/kreslo1.png'
 import svg from '../Images/bestseller.svg';
 import {Animated} from "react-animated-css";
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,53 +29,39 @@ const useStyles = makeStyles((theme) => ({
    
       return (
     
-        <div class="wrapper">
+        <div class="wrapper" style={{marginRight: '0', marginLeft: '0'}}>
 
-	<h2><strong><img src={svg} className="svg"/> Bestsellers<span>( 5 )</span></strong></h2>
+	<h2><strong><img src={svg} className="svg"/> Bestsellers <span> ( 5 ) </span></strong></h2>
 
-	<div class="cards" style={{marginRight: 'auto', marginLeft: 'auto'}}>
+	<div className="cards" style={{marginRight: '0', marginLeft: '0', marginTop: '-50px'}}>
 
-		<figure class="card" style={{width: '600px', height: '840px'}}>
-
-			<img src={capture} style={{background: '#090909'}}/>
-
+		<figure class="card" style={{width: '550px', height: '780px'}}>
+			<img src={capture} style={{background: '#0E0F0F'}}/>
 			<figcaption>Motherboards</figcaption>
-
 		</figure>
 
-		<figure class="card">
-
-			<img src={capture1} style={{background: '#090909'}}/>
-
+		<figure class="card" style={{ }}>
+			<img src={capture1} style={{background: '#0E0F0F'}}/>
 			<figcaption>Graphic cards</figcaption>
-
 		</figure>
 
-		<figure class="card">
-
-			<img src={capture2} style={{background: '#090909'}}/>
-
+		<figure class="card" style={{}}>
+			<img src={capture2} style={{background: '#0E0F0F'}}/>
 			<figcaption>Processors</figcaption>
-
 		</figure>
 
-		<figure class="card" style={{marginTop: '440px', left: '-530px'}}>
-
+		<figure class="card" style={{top: '398px', left: '-360px'}}>
 			<img src={capture3} />
-
 			<figcaption>Cases</figcaption>
-
 		</figure>
-        <figure class="card" style={{marginTop: '-420px', left: '1260px'}}>
 
+		<figure class="card" style={{top: '-402px', left: '1229px'}}>
             <img src={capture4} />
-
             <figcaption>RAM</figcaption>
-
         </figure>
 
 	</div>
-	<div className="back" style={{backgroundColor: '#090909', marginTop: '150px'}}>
+	<div className="back" style={{backgroundColor: '#0E0F0F', marginTop: '-300px'}}>
 	<h2><strong><div style={{position: 'center', marginTop: '-50px'}}>Beatiful in every way</div></strong></h2>
 		
 	<div class="news" style={{ marginTop: '-55px', marginLeft: 'auto', marginRight: 'auto'}}>
