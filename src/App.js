@@ -48,7 +48,7 @@ function App() {
   // window.onscroll = function() { scrollEvent() };
   return (
     <div className="App">
-    {/* <Preloader/>  */}
+    <Preloader/> 
       <Navbar/>    
       
       <MainCarouselPage/>
