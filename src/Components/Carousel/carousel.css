@@ -501,7 +501,7 @@ and (min-width : 1824px) {
 .carousel-indicators li{
  width: 20px !important;
  height: 10px !important;
- background-color: yellow !important
+ background-color: red !important
 }
 
 /* .button{
