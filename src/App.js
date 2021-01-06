@@ -6,6 +6,7 @@ import Footer from './Components/Footer/footer';
 import Body from './Components/Body/body';
 import Spring from './Components/Spring/spring';
 import Preloader from './Components/Preloader/preloader';
+import News from './Components/NewGoods/news'
 // import Preloader from './Components/Spring/spring';
 
 import ProductPage from './Components/Products/products'
@@ -49,12 +50,10 @@ function App() {
   return (
     <div className="App">
     {/* <Preloader/>  */}
-      <Navbar/>    
-      
-      <MainCarouselPage/>
-   
-    
+      <Navbar/>        
+      <MainCarouselPage/>   
       <Body/>
+      <News/>
       {/* <ProductPage/> */}
         
       {/* <Footer/>  */}

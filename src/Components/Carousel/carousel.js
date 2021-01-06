@@ -129,7 +129,7 @@ const MainCarouselPage = () => {
             </form>
       </div>
   </nav>
-    <div id="video-carousel-example" className="carousel slide" data-ride="carousel" style={{width: '74%', marginLeft: 'auto', marginRight: 'auto'}}>
+    <div id="video-carousel-example" className="carousel slide" data-ride="carousel" style={{width: '100%', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'black'}}>
 
       <ol className="carousel-indicators">
         <li data-target="#video-carousel-example" data-slide-to="0" className="active" ></li>

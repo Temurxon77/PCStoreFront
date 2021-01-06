@@ -31,8 +31,10 @@ const useStyles = makeStyles((theme) => ({
     
         <div class="wrapper" style={{marginRight: '0', marginLeft: '0'}}>
 
-	<h2><strong><img src={svg} className="svg"/> Bestsellers <span> ( 5 ) </span></strong></h2>
-
+	<div style={{}}>
+		<h2><strong><img src={svg} className="svg"/> Bestsellers <span> ( 5 ) </span></strong></h2>
+		<Button color="primary">animal</Button>
+	</div>
 	<div className="cards" style={{marginRight: '0', marginLeft: '0', marginTop: '-50px'}}>
 
 		<figure class="card" style={{width: '550px', height: '780px'}}>
@@ -61,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
         </figure>
 
 	</div>
-	<div className="back" style={{backgroundColor: '#0E0F0F', marginTop: '-300px'}}>
+	<div className="back" style={{backgroundColor: '#0E0F0F', marginTop: '-300px',}}>
 	<h2><strong><div style={{position: 'center', marginTop: '-50px'}}>Beatiful in every way</div></strong></h2>
 		
 	<div class="news" style={{ marginTop: '-55px', marginLeft: 'auto', marginRight: 'auto'}}>
