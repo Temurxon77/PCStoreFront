@@ -1,12 +1,15 @@
-.wrapper{
-    background-color: '#0E0F0F'; 
-    display: 'flex';  
-    margin-left: 'auto';
-    margin-right: 'auto';
-    color: white;
-}
-
 .name{
     color: white;
-    margin-top: 100px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family:  'Teko', sans-serif;
 }
+
+.captures{
+    /* padding: '50px'; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
