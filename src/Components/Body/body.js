@@ -6,6 +6,7 @@ import './body.css';
 import './index.css';
 import capture from '../Images/orig.png';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       backgroundColor: 'black',
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
             imagesrc: capture,
         },
     ]
-    
+    // comment
       return (
       
           <div style={{padding: '50px',marginTop:'50px'}}>
@@ -45,15 +46,17 @@ const useStyles = makeStyles((theme) => ({
         }
     }}
     style={{
-        width:560 //container style (you can use className as well)
+        width:560 
     }}
 >
 
 <div className="card">
         <div className="figure">
-            <div className="figure_bg"/> 
             <img src={capture}/>
         </div>
+    
+
+
         <div className="content">
             <h2 className="title">Ноутбуки</h2>
             <p className={"body"}>Lorem Ipsum is simply dummy text of the
