@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
     AppBar:{
         //background: `url("http://lorempixel.com/1920/1080/nature") no-repeat center center`,
-        backgroundColor:"#2F3133",
+        backgroundColor:"black",
         backgroundSize:"cover"
       },
     menuButton: {
@@ -186,7 +186,7 @@ const Navbar = () => {
       </Menu>
       </div>
       <div >
-      <Button className='forExample' style={{color:'white'}} onClick={handleClickAksiya}>
+      <Button className={classes.buttonColor} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClickAksiya}>
         
       АКЦИИ
       </Button>

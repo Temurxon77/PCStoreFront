@@ -1,12 +1,12 @@
 import React from "react";
-
+import './carousel.css';
 import photo from './1.jpeg';
 import photo1 from '../Images/6010356488.jpg';
 import photo2 from '../Images/123.jpg';
 const MainCarouselPage = () => {
   return (
  
-    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{}}>
+    <div id="video-carousel-example" className="carousel slide carousel-fade" data-ride="carousel" style={{marginTop: '60px', height: '550px'}}>
    
       <ol className="carousel-indicators">
         <li data-target="#video-carousel-example" data-slide-to="0"></li>
@@ -14,7 +14,7 @@ const MainCarouselPage = () => {
         <li data-target="#video-carousel-example" data-slide-to="2"></li>
       </ol>
     
-      <div className="carousel-inner" role="listbox" style={{height: '500px'}}>
+      <div className="carousel-inner" role="listbox" style={{height: '100%'}}>
         <div className="carousel-item active">
           
         <img className="card-img-top" src={photo}/>
