@@ -3,7 +3,7 @@ import './carousel.css';
 import logo from '../Images/logo.png';
 import { Button } from '@material-ui/core';
 import photo from '../Images/3.jpg';
-import photo1 from '../Images/2.jpg';
+import photo1 from '../Images/2.png';
 import photo3 from '../Images/12.jpg'
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
