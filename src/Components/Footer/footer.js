@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     paddingTop: '56.25%', 
   },
-
+  
   mainRoot: {
   display: 'flex',
   justifyContent: 'center',

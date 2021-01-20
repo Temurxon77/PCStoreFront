@@ -1,0 +1,25 @@
+.name{
+    color: white;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family:  'Teko', sans-serif;
+}
+
+.captures{
+    /* padding: '50px'; */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.inputdiv{
+    height: 400px;
+    width: auto;
+    justify-content: none;
+    align-items: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../Images/consultation.jpg');
+    padding: 100px;
+}
+

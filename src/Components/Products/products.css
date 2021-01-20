@@ -1,0 +1,115 @@
+#myCarousel-indicators {
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:20px;
+    right:10px; left:95%;
+    width:auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+#myCarousel-indicators li{   
+    background-color:  #8A868E; 
+    width: 15px;
+    height: 15px;
+  }
+
+#myCarousel-indicators .active {
+    margin-bottom:5px; 
+    background-color:red;
+  }
+  @keyframes movingTopToBottom {
+    from {top: 0px;}
+    to {top: 300px;}
+  }
+  @keyframes movingLeftToRight {
+    
+    0% {   
+      left: -999999px; 
+    }
+    33% {
+      left: 100px;
+    }
+    66% {
+      left: 200px;
+    }
+    100% {
+      left: 300px;
+    }
+  }
+
+
+
+  #promoHeader { 
+    height: 65px;
+    width: 450px;
+    color: white;
+    margin-left: 15.6%;
+    animation: movingTopToBottom .5s linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  #promoTitle{
+    width: 400px;
+    bottom: 740px;
+    color: white;
+    animation: movingLeftToRight 0.5s linear;
+    /* animation-direction: normal; */
+    animation-fill-mode: both;
+    position: relative;
+    animation-delay: .5s;
+  }
+
+
+
+  .header1{
+    color: #2BC500 !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
+  }
+  
+  .title1{
+    color: white !important;
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: left;
+  }
+
+  .header2{
+    color: #FF001D !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
+  }
+
+  .title2{
+    color: white !important;
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: left;
+  }
+  .header3{
+    color: #00A5FF !important;
+    font-family: Luminari, fantasy, bold !important;
+    text-align: left;
+  }
+
+  .title3{
+    color: white !important;
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: left;
+  }
+
+  /* .carousel-control-next{
+    left: 50px;
+    bottom: 50px;
+    width: 1px;
+    border: 1px solid white;
+  }
+
+  .carousel-control-prev{
+    left: 50px;
+    bottom: 50px;
+  } */
